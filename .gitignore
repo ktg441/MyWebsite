@@ -54,6 +54,10 @@ buck-out/
 */fastlane/Preview.html
 */fastlane/screenshots
 
+#Visual Studio
+#
+.vs/*
+
 # Bundle artifact
 *.jsbundle
 
