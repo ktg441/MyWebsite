@@ -98,3 +98,59 @@
       }
     }
   }
+
+  .mainLine {
+    position: absolute;
+    transform-origin: center;
+    top: 30%;
+    width: 100px;
+    min-height: 4px;
+    background: rgb(204, 19, 148);
+    animation-name: spin, expand, bounce_out, fade_out;
+    animation-duration: 1500ms, 1250ms, 500ms, 600ms;
+    animation-delay: 0ms, 2000ms, 4000ms, 4500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease, ease, ease, ease;
+    animation-iteration-count: 1, 1, 1, 1; 
+  }
+
+  .loadLine {
+    position: absolute;
+    top: 30%;
+    width: 100px;
+    min-height: 4px;
+    background: rgb(204, 19, 148);
+    animation-name: spin, fade_out;
+    animation-duration: 1500ms, 100ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease, ease;
+    animation-iteration-count: 1, 1;
+    
+    &:nth-of-type(1) { animation-delay: 0.1s, 1.6s; }  
+    &:nth-of-type(2) { animation-delay: 0.2s, 1.7s; }
+    &:nth-of-type(3) { animation-delay: 0.3s, 1.8s; }
+  }
+
+  @keyframes spin { 
+    100% { 
+      transform: rotate(360deg); 
+    } 
+  }
+
+  @keyframes expand {
+    100% {
+      transform: scaleX(9);
+    }
+  }
+
+  @keyframes bounce_out {
+    100% {
+      transform: scale3d(1.25, 1.25, 1.25);
+    }
+  }
+
+  @keyframes fade_out {
+    100% {
+      transform: scale3D(0, 0, 0);
+    }
+  }

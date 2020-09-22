@@ -22,9 +22,17 @@ html, body, #root, .App {
 #introTextContainer {
   display: table;
   margin: 0 auto;
+  text-align: center;
 }
 
 #introText {
   text-align: center;
   font-size: 100px;
+}
+
+#linesContainer {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  margin-left: 45%;
 }

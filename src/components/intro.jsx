@@ -31,6 +31,12 @@ class Intro extends Component {
                             Kiran Thomas Payne
                         </Bounce>
                     </h1>
+                    <div id="linesContainer">
+                        <div className="mainLine"></div>
+                        <div className="loadLine"></div>
+                        <div className="loadLine"></div>
+                        <div className="loadLine"></div>
+                    </div>
                 </div>
             </div>
         );
