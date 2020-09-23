@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Bounce from "react-reveal/Bounce";
 
+import Logo from "../media/Logo.png";
+
 /*
 Component that plays the into animations and then loads the website after
 */
@@ -34,6 +36,7 @@ class Intro extends Component {
         return (
             <div id="introContainer">
                 <div id="introTextContainer">
+                    <img src={Logo} className="fadeLogo"></img>
                     <h1 id="introText">
                         <Bounce top cascade when={this.state.show}>
                             Kiran Thomas Payne
