@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Bounce from "react-reveal/Bounce";
 
+/*
+Component that plays the into animations and then loads the website after
+*/
 class Intro extends Component {
 
     constructor() {
@@ -8,18 +11,23 @@ class Intro extends Component {
         this.state = { show: false };
     }
 
+    /* When the component loads, toggle intro on */
     componentDidMount() {
         this.toggleIntro();
-        setTimeout(this.loadSite, 3500);
+        setTimeout(this.loadSite, 3800);
     }
 
     toggleIntro = () => {
         this.setState({ show: !this.state.show});
     }
 
+    /* Load main content */
     loadSite = () => {
         this.toggleIntro();
-        setTimeout(function() { document.getElementById("introContainer").remove()}, 4000);
+        document.getElementsByClassName("backgroundImgFull")[0].className = "backgroundImgFade";
+        setTimeout(function() { 
+            document.getElementById("introContainer").remove();
+        }, 4000);
     }
 
     render() {

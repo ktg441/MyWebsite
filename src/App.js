@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import "./css/App.css";
-import "./css/lights.scss";
+import "./css/Animations.scss";
 
 import Intro from "./components/intro";
 //Import various components and/or css files
 
 class App extends Component {
 
+    /* Creates randomly moving particles around the screen */
     createLightParticles = () => {
         var lights = [];
-        for (var i = 0; i < 100; i++) {
+        for (var i = 0; i < 20; i++) {
             lights.push(
             <div key ={"outerCircle" + i} className="circle-container">
                 <div key={"innerCircle" + i} className="circle"></div>
@@ -23,7 +24,7 @@ class App extends Component {
     render() {
         return (
             <React.Fragment>
-                <object className="backgroundImg" aria-label="polite" ></object>
+                <object className="backgroundImgFull" aria-label="polite" ></object>
                 { this.createLightParticles() } 
                 <Intro />
             </React.Fragment>
