@@ -175,18 +175,35 @@
     }
   }
 
-  .fadeLogo {
+  .fadeLogoIn {
     position: absolute;
+    filter: opacity(0);
     bottom: 100%;
     left: 44%;
     width: 14%;
     height: auto;
-    animation: opacity_fade 1.1s ease;
+    animation: logo_fade_in 1.5s ease;
     animation-fill-mode: forwards;
-    animation-delay: 4000ms;
   }
 
-  @keyframes opacity_fade {
+  .fadeLogoOut {
+    position: absolute;
+    filter: opacity(1);
+    bottom: 100%;
+    left: 44%;
+    width: 14%;
+    height: auto;
+    animation: logo_fade_out 1.5s ease;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes logo_fade_in {
+    100% {
+      filter: opacity(1);
+    }
+  }
+
+  @keyframes logo_fade_out {
     100% {
       filter: opacity(0);
     }
