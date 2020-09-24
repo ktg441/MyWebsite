@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import "./css/App.css";
 import "./css/Animations.scss";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Intro from "./components/intro";
+import CustomNavbar from "./components/navbar";
 //Import various components and/or css files
 
 class App extends Component {
@@ -27,6 +30,9 @@ class App extends Component {
                 <object className="backgroundImgFull" aria-label="polite" ></object>
                 { this.createLightParticles() } 
                 <Intro />
+                <div id="fullSite" className="siteHidden">
+                    <CustomNavbar />
+                </div>
             </React.Fragment>
         );
     }

@@ -1,8 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
+
 .lightsContainer {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0;
 }
@@ -207,4 +210,15 @@
     100% {
       filter: opacity(0);
     }
+  }
+
+  .siteVisible {
+    position: absolute;
+    filter: opacity(0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    animation: logo_fade_in 1.5s ease;
+    animation-fill-mode: forwards;
   }

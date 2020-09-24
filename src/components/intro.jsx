@@ -28,16 +28,17 @@ class Intro extends Component {
         this.toggleIntro();
         document.getElementById("introLogo").className = "fadeLogoOut";
         document.getElementsByClassName("backgroundImgFull")[0].className = "backgroundImgFade";
+        document.getElementById("fullSite").className = "siteVisible";
         setTimeout(function() { 
             document.getElementById("introContainer").remove();
-        }, 4000);
+        }, 2000);
     }
 
     render() {
         return (
             <div id="introContainer">
                 <div id="introTextContainer">
-                    <img id="introLogo" src={Logo} className="fadeLogoIn"></img>
+                    <img id="introLogo" src={Logo} className="fadeLogoIn" alt="Logo"></img>
                     <h1 id="introText">
                         <Bounce top cascade when={this.state.show}>
                             Kiran Thomas Payne

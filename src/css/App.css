@@ -1,4 +1,5 @@
 html, body, #root, .App {
+  margin: 0;
   height: 100%;
 }
 
@@ -11,6 +12,14 @@ html, body, #root, .App {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23ac0ecc' points='957 575 539 900 1396 900'/%3E%3Cpolygon fill='%234700aa' points='957 575 872.9 900 1396 900'/%3E%3Cpolygon fill='%23ac0bc5' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%235400a3' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23ab08be' points='1203 600 1552 900 876 900'/%3E%3Cpolygon fill='%2361009c' points='1203 600 1552 900 1162 900'/%3E%3Cpolygon fill='%23ab06b8' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%236e0096' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23aa03b1' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%237b008f' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
+}
+
+.siteHidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
 }
 
 #introContainer {
@@ -28,7 +37,9 @@ html, body, #root, .App {
 
 #introText {
   text-align: center;
-  font-size: 100px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 109px;
+  margin: 0;
 }
 
 #linesContainer {
