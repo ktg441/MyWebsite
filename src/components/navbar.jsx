@@ -17,7 +17,7 @@ class CustomNavbar extends Component {
         this.state = {};
     }
 
-    /* When the component loads, toggle intro on */
+    /* When the component loads... */
     componentDidMount() {
 
     }
