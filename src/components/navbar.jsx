@@ -26,17 +26,17 @@ class CustomNavbar extends Component {
         return (
             <div id="navWrapper" className="siteHidden">
                 <Container fluid>
-                    <Navbar collapseOnSelect fixed="top">
+                    <Navbar collapseOnSelect bg="info" fixed="top">
                         <Navbar.Brand href="#about-me">
                             <img src={Logo} width="60" height="60" alt="" className="d-inline-block align-center" />{' '}
                             Kiran Thomas Payne
                         </Navbar.Brand>
                         {'|'}
                         <Nav className="mr-auto">
-                            <Nav.Link href="#about-me">About Me</Nav.Link>
-                            <Nav.Link href="#resume">Resume</Nav.Link>
-                            <Nav.Link href="#projects">Projects</Nav.Link>
-                            <Nav.Link href="#contact">Contact</Nav.Link>
+                            <Nav.Link href="#about-me" className="text-dark" >About Me</Nav.Link>
+                            <Nav.Link href="#resume" className="text-dark" >Resume</Nav.Link>
+                            <Nav.Link href="#projects" className="text-dark" >Projects</Nav.Link>
+                            <Nav.Link href="#contact" className="text-dark" >Contact</Nav.Link>
                         </Nav>
                         <Nav>
                             <Nav.Link href="https://www.linkedin.com/in/kiran-payne/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></Nav.Link>

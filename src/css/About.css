@@ -2,7 +2,7 @@
     border-radius: 10%;
     border: 3px solid purple;
     box-shadow: 5px 5px grey;
-    max-width: 60%;
+    max-width: 70%;
 }
 
 .downArrowPic {
@@ -24,20 +24,21 @@
 }
 
 #aboutDescription {
-    display: inline-block;
-    width: 40%;
+    overflow: scroll;
+    float: left;
+    text-align: center;
+    width: 50%;
+    max-height: 70%;
     padding: 20px;
-    margin-top: 10%;
+    margin-top: 6%;
     margin-bottom: 10%;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 #aboutPicture {
-    display: inline-block;
-    width: 40%;
-    height: 40%;
+    float: right;
+    width: 30%;
     padding: 20px;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    margin-left: 10%;
+    margin-top: 10%;
+    margin-right: 7%;
 }
