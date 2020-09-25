@@ -28,7 +28,9 @@ class Intro extends Component {
         this.toggleIntro();
         document.getElementById("introLogo").className = "fadeLogoOut";
         document.getElementById("bgImg").className = "backgroundImgFade";
-        document.getElementById("fullSite").className = "siteVisible";
+        Array.from(document.getElementsByClassName("siteHidden")).forEach(element => {
+            element.className = "siteVisible";
+        });
         setTimeout(function() { 
             document.getElementById("introContainer").remove();
         }, 2000);

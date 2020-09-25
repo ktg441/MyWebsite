@@ -213,12 +213,27 @@
   }
 
   .siteVisible {
-    position: absolute;
     filter: opacity(0);
-    top: 0;
-    left: 0;
-    width: 100%;
     z-index: 1;
     animation: logo_fade_in 1.5s ease;
     animation-fill-mode: forwards;
+  }
+
+  #downArrow {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 3%;
+    bottom: 4%;
+    left: 48.5%;
+    animation: bounce_arrow 4s ease 2;
+  }
+
+  @keyframes bounce_arrow {
+    25% {
+      bottom: 1%;
+    }
+    75% {
+      bottom: 4%;
+    }
   }

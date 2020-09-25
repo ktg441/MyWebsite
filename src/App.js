@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Intro from "./components/intro";
 import CustomNavbar from "./components/navbar";
 import About from "./components/about";
+import Resume from "./components/resume";
 //Import various components and/or css files
 
 class App extends Component {
@@ -32,10 +33,9 @@ class App extends Component {
                 <object id="bgImg" className="backgroundImgFull" aria-label="polite" ></object>
                 { this.createLightParticles() } 
                 <Intro />
-                <div id="fullSite" className="siteHidden">
-                    <CustomNavbar />
-                    <About />
-                </div>
+                <CustomNavbar />
+                <About />
+                <Resume />
             </React.Fragment>
         );
     }

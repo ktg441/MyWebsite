@@ -3,6 +3,14 @@ html, body, #root, .App {
   height: 100%;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
 .backgroundImgFull {
   min-width: 100%;
   min-height: 100%;
@@ -15,11 +23,15 @@ html, body, #root, .App {
 }
 
 .siteHidden {
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: 1;
-  visibility: hidden;
+  display: none;
+}
+
+#navWrapper {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
 }
 
 #introContainer {
