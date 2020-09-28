@@ -1,15 +1,10 @@
 .aboutPic {
+    -webkit-border-radius: 10%;
     border-radius: 10%;
     border: 3px solid purple;
-    box-shadow: 5px 5x grey;
-    max-width: 65%;
-}
-
-.aboutPicOld {
-    border-radius: 10%;
-    border: 3px solid purple;
+    -webkit-box-shadow: 5px 5px grey;
     box-shadow: 5px 5px grey;
-    max-width: 70%;
+    max-width: 65%;
 }
 
 .downArrowPic {
@@ -42,24 +37,4 @@
     width: 50%;
     padding: 2%;
     text-align: center;
-}
-
-#aboutDescriptionOld {
-    overflow: scroll;
-    float: left;
-    text-align: center;
-    width: 50%;
-    max-height: 70%;
-    padding: 20px;
-    margin-top: 6%;
-    margin-bottom: 10%;
-    margin-left: 5%;
-}
-
-#aboutPictureOld {
-    float: right;
-    width: 30%;
-    padding: 20px;
-    margin-top: 9%;
-    margin-right: 7%;
 }
