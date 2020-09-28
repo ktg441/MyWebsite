@@ -1,28 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.8da07717.chunk.css",
-    "main.js": "/static/js/main.066424b6.chunk.js",
-    "main.js.map": "/static/js/main.066424b6.chunk.js.map",
+    "main.css": "/static/css/main.b32d99b5.chunk.css",
+    "main.js": "/static/js/main.13a58d8e.chunk.js",
+    "main.js.map": "/static/js/main.13a58d8e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9b126251.js",
     "runtime-main.js.map": "/static/js/runtime-main.9b126251.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.4069e23d.chunk.js": "/static/js/2.4069e23d.chunk.js",
-    "static/js/2.4069e23d.chunk.js.map": "/static/js/2.4069e23d.chunk.js.map",
+    "static/js/2.684c9dbf.chunk.js": "/static/js/2.684c9dbf.chunk.js",
+    "static/js/2.684c9dbf.chunk.js.map": "/static/js/2.684c9dbf.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f7844c51b93af2e83b37416a9f812217.js": "/precache-manifest.f7844c51b93af2e83b37416a9f812217.js",
+    "precache-manifest.e4b6d2a74d05dbb867c25da0484bdf3c.js": "/precache-manifest.e4b6d2a74d05dbb867c25da0484bdf3c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.8da07717.chunk.css.map": "/static/css/main.8da07717.chunk.css.map",
-    "static/js/2.4069e23d.chunk.js.LICENSE.txt": "/static/js/2.4069e23d.chunk.js.LICENSE.txt",
+    "static/css/main.b32d99b5.chunk.css.map": "/static/css/main.b32d99b5.chunk.css.map",
+    "static/js/2.684c9dbf.chunk.js.LICENSE.txt": "/static/js/2.684c9dbf.chunk.js.LICENSE.txt",
+    "static/media/CDesign_Logo.svg": "/static/media/CDesign_Logo.a64d58db.svg",
+    "static/media/EcolabLogo.svg": "/static/media/EcolabLogo.3cf6136a.svg",
     "static/media/KiranPumpkingPatch.jpg": "/static/media/KiranPumpkingPatch.bcf25efb.jpg",
     "static/media/Logo.png": "/static/media/Logo.89f7266d.png",
-    "static/media/Purdue_Boilermakers_logo.svg": "/static/media/Purdue_Boilermakers_logo.7325d422.svg"
+    "static/media/Purdue_Boilermakers_Logo.svg": "/static/media/Purdue_Boilermakers_Logo.7325d422.svg",
+    "static/media/Purdue_CS_Logo.svg": "/static/media/Purdue_CS_Logo.d4308875.svg",
+    "static/media/RSALogo.svg": "/static/media/RSALogo.542c2e1a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9b126251.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.4069e23d.chunk.js",
-    "static/css/main.8da07717.chunk.css",
-    "static/js/main.066424b6.chunk.js"
+    "static/js/2.684c9dbf.chunk.js",
+    "static/css/main.b32d99b5.chunk.css",
+    "static/js/main.13a58d8e.chunk.js"
   ]
 }
