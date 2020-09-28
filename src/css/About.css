@@ -1,6 +1,13 @@
 .aboutPic {
     border-radius: 10%;
     border: 3px solid purple;
+    box-shadow: 5px 5x grey;
+    max-width: 65%;
+}
+
+.aboutPicOld {
+    border-radius: 10%;
+    border: 3px solid purple;
     box-shadow: 5px 5px grey;
     max-width: 70%;
 }
@@ -21,9 +28,23 @@
     position: relative;
     width: 100%;
     height: 100%;
+    padding: 100px;
+    display: flex;
 }
 
 #aboutDescription {
+    overflow: scroll;
+    text-align: center;
+    width: 50%;
+}
+
+#aboutPicture {
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+}
+
+#aboutDescriptionOld {
     overflow: scroll;
     float: left;
     text-align: center;
@@ -35,10 +56,10 @@
     margin-left: 5%;
 }
 
-#aboutPicture {
+#aboutPictureOld {
     float: right;
     width: 30%;
     padding: 20px;
-    margin-top: 10%;
+    margin-top: 9%;
     margin-right: 7%;
 }
