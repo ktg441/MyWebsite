@@ -21,29 +21,54 @@
     background-color: white;
 }
 
+.leftShadow {
+    -webkit-box-shadow: -5px 5px black;
+    box-shadow: -5px 5px black;
+}
+
+.rightShadow {
+    -webkit-box-shadow: 5px 5px black;
+    box-shadow: 5px 5px black;
+}
+
+.subList {
+    font-weight: lighter;
+    font-size: 25px;
+}
+
 .sectionHeader {
     text-align: center;
     font-weight: bold;
     font-size: 40px;
     border: solid 3px black;
-    margin: 5px;
+    margin: 10px;
 }
 
-#education {
+.section {
     display: flex;
     position: relative;
     width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-#schoolPic {
-    width: 50%;
+.picDiv {
+    width: 45%;
     text-align: center;
 }
 
-#schoolDesc {
+.descDiv {
     overflow: scroll;
-    padding-left: 10%;
-    width: 50%;
+    width: 55%;
+}
+
+#schoolDesc {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#cDesc, #ecoDesc, #rsaDesc, #taDesc {
+    padding-left: 5%;
     font-weight: bold;
     font-size: 30px;
 }
