@@ -1,0 +1,16 @@
+#projects {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding: 100px;
+    background-color: lightgray;
+}
+
+#projectHeader {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    margin: 10px;
+}

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import "./css/App.css";
 import "./css/About.css";
 import "./css/Resume.css";
+import "./css/Projects.css";
+import "./css/Contact.css";
 import "./css/Animations.scss";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,6 +12,8 @@ import Intro from "./components/intro";
 import CustomNavbar from "./components/navbar";
 import About from "./components/about";
 import Resume from "./components/resume";
+import Projects from "./components/projects";
+import Contact from "./components/contact";
 //Import various components and/or css files
 
 class App extends Component {
@@ -37,6 +41,8 @@ class App extends Component {
                 <CustomNavbar />
                 <About />
                 <Resume />
+                <Projects />
+                <Contact />
             </React.Fragment>
         );
     }

@@ -1,0 +1,16 @@
+#contact {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding: 100px;
+    background-color: mediumvioletred;
+}
+
+#contactHeader {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin: 10px;
+}

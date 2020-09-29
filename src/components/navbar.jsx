@@ -26,7 +26,7 @@ class CustomNavbar extends Component {
         return (
             <div id="navWrapper" className="siteHidden">
                 <Container fluid>
-                    <Navbar collapseOnSelect bg="info" fixed="top">
+                    <Navbar collapseOnSelect bg="info" fixed="top" className="shadow-lg">
                         <Navbar.Brand href="#about-me">
                             <img src={Logo} width="60" height="60" alt="" className="d-inline-block align-center" />{' '}
                             Kiran Thomas Payne
