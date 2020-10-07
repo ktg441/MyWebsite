@@ -39,9 +39,9 @@ class CustomNavbar extends Component {
                             <Nav.Link href="#contact" className="text-dark" >Contact</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="https://www.linkedin.com/in/kiran-payne/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></Nav.Link>
-                            <Nav.Link href="https://github.com/ktg441" target="_blank"><FontAwesomeIcon icon={faGithub} /></Nav.Link>
-                            <Nav.Link href="mailto:kiran.t.payne@gmail.com, payne77@purdue.edu" target="_blank"><FontAwesomeIcon icon={faEnvelope} /></Nav.Link>
+                            <Nav.Link href="https://www.linkedin.com/in/kiran-payne/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></Nav.Link>
+                            <Nav.Link href="https://github.com/ktg441" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></Nav.Link>
+                            <Nav.Link href="mailto:kiran.t.payne@gmail.com, payne77@purdue.edu" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faEnvelope} /></Nav.Link>
                         </Nav>
                     </Navbar>
                 </Container>
