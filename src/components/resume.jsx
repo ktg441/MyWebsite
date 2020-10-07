@@ -47,11 +47,12 @@ class Resume extends Component {
                         <div id="cDesc" className="descDiv">
                             <ul className="list-unstyled">
                                 <li><u>Software Developer/Research Assistant</u></li>
-                                <ul className="text-muted subList">
-                                    <li>Major: Computer Science</li>
-                                    <li>Minor: Entrepreneurship & Innovation</li>
-                                    <li>GPA: 3.41/4.00</li>
-                                    <li>Expected Graduation: December 2020</li>
+                                <li className = "descSub"><i>February 2020 - Present</i></li>
+                                <ul className="text-muted subList descSub">
+                                    <li>Lead programmer for 6 person research team</li>
+                                    <li>Created and modernized aspects of an AR-IoT System used for research projects</li>
+                                    <li>Helped conduct research and user studies of mentioned system</li>
+                                    <li>Submitted manuscripts to ACM CHI 2021 (Conference on Human-Factors in Computer Systems) and ACM CSCW 2021 (Conference on Computer-Supported Cooperative Work and Social Computing)</li>
                                 </ul>
                             </ul>
                         </div>
@@ -63,11 +64,12 @@ class Resume extends Component {
                         <div id="ecoDesc" className="descDiv">
                             <ul className="list-unstyled">
                                 <li><u>IT Intern</u></li>
-                                <ul className="text-muted subList">
-                                    <li>Major: Computer Science</li>
-                                    <li>Minor: Entrepreneurship & Innovation</li>
-                                    <li>GPA: 3.41/4.00</li>
-                                    <li>Expected Graduation: December 2020</li>
+                                <li className = "descSub"><i>June 2020 - August 2020</i></li>
+                                <ul className="text-muted subList  descSub">
+                                    <li>Created a foundational Threat Intelligence System that collects critical security data from various APIs</li>
+                                    <li>Visualized ingested data to create consolidated Intelligence Dashboards for InfoSec team</li>
+                                    <li>Began migration of all extraneous security data into one cental location to be incorporated in above system</li>
+                                    <li>Orchestrated and executed the company’s first hackathon for 20+ interns over 2 days</li>
                                 </ul>
                             </ul>
                         </div>
@@ -79,11 +81,12 @@ class Resume extends Component {
                         <div id="rsaDesc" className="descDiv">
                             <ul className="list-unstyled">
                                 <li><u>Shift Manager/Senior Fraud Analyst</u></li>
-                                <ul className="text-muted subList">
-                                    <li>Major: Computer Science</li>
-                                    <li>Minor: Entrepreneurship & Innovation</li>
-                                    <li>GPA: 3.41/4.00</li>
-                                    <li>Expected Graduation: December 2020</li>
+                                <li className = "descSub"><i>January 2018 - February 2020</i></li>
+                                <ul className="text-muted subList descSub">
+                                    <li>Managed corporate inbox and phone number as a 24/7 point of contact for 100+ financial institutions around the world</li>
+                                    <li>Created a tool that automated an entire role at our site</li>
+                                    <li>Redesigned the website that our site used for QA</li>
+                                    <li>Detected, analyzed, and shutdown fraudulent internet activity (Phishing, malware, brand abuse, trojans, etc.)</li>
                                 </ul>
                             </ul>
                         </div>
@@ -95,11 +98,15 @@ class Resume extends Component {
                         <div id="taDesc" className="descDiv">
                             <ul className="list-unstyled">
                                 <li><u>Undergraduate Teaching Assistant</u></li>
-                                <ul className="text-muted subList">
-                                    <li>Major: Computer Science</li>
-                                    <li>Minor: Entrepreneurship & Innovation</li>
-                                    <li>GPA: 3.41/4.00</li>
-                                    <li>Expected Graduation: December 2020</li>
+                                <li className = "descSub"><i>Spring 2020: Systems Programming</i></li>
+                                <ul className="text-muted subList descSub">
+                                    <li>Assisted in a lab section of 30+ students teaching topics related to shell programming and memory optimization</li>
+                                    <li>Helped shift course resources and lab materials online in response to the COVID-19 pandemic</li>
+                                </ul>
+                                <li className = "descSub"><i>Summer 2019: Object-Oriented Programming & Problem Solving in Java</i></li>
+                                <ul className="text-muted subList descSub">
+                                    <li>Taught foundational programming skills and standards to lab section of 20+ novice CS students</li>
+                                    <li>Held regular office hours 3+ times a week to assist students with concepts and homework</li>
                                 </ul>
                             </ul>
                         </div>

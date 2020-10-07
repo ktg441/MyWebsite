@@ -61,15 +61,16 @@
 .descDiv {
     overflow: scroll;
     width: 55%;
-}
-
-#schoolDesc {
     font-weight: bold;
+    padding-left: 5%;
     font-size: 30px;
 }
 
-#cDesc, #ecoDesc, #rsaDesc, #taDesc {
-    padding-left: 5%;
+.descSub {
+    font-size: 20px;
+}
+
+#schoolDesc {
     font-weight: bold;
     font-size: 30px;
 }
