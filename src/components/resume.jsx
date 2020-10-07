@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-import { Icon, InlineIcon } from '@iconify/react';
+import Downloads from "./downloads";
+
+import Icon from '@iconify/react';
 import unityIcon from '@iconify/icons-logos/unity';
 import firebaseIcon from '@iconify/icons-logos/firebase';
 import virtualReality from '@iconify/icons-mdi/virtual-reality';
@@ -174,7 +176,8 @@ class Resume extends Component {
                             <i className="devicon-mysql-plain-wordmark colored"></i>
                         </div>
                     </div>
-                <div className="sectionHeader"><button className="btn btn-info btn-lg">Resume (PDF)</button></div>
+                <div className="sectionHeader">Download Resume</div>
+                <Downloads />
             </div>
         );
     }

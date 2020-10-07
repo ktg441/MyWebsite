@@ -88,3 +88,20 @@
     text-align: center;
     font-size: 150px;
 }
+
+#docContainer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.downloadButton {
+    padding: 10px;
+}
+
+.whiteLink {
+    color: white;
+}
+
+.whiteLink:hover {
+    color: white;
+}
