@@ -74,3 +74,17 @@
     font-weight: bold;
     font-size: 30px;
 }
+
+.skillBox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.skill {
+    flex: 20%;
+    max-width: 20%;
+    padding: 0 4px;
+    text-align: center;
+    font-size: 150px;
+}

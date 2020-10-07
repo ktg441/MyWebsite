@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 
+import { Icon, InlineIcon } from '@iconify/react';
+import unityIcon from '@iconify/icons-logos/unity';
+import firebaseIcon from '@iconify/icons-logos/firebase';
+import virtualReality from '@iconify/icons-mdi/virtual-reality';
+import augmentedReality from '@iconify/icons-mdi/augmented-reality';
+
+
 import Purdue from "../media/Purdue_Boilermakers_Logo.svg";
 import PurdueCS from "../media/Purdue_CS_Logo.svg";
 import CDesign from "../media/CDesign_Logo.svg";
@@ -116,6 +123,57 @@ class Resume extends Component {
                     </div>
                 </div>
                 <div className="sectionHeader">Skills</div>
+                    <div className="skillBox">
+                        <div className="skill">
+                            <i className="devicon-java-plain-wordmark colored"></i>
+                        </div>
+                        <div className="skill">
+                            <i className="devicon-csharp-plain colored"></i>
+                        </div>
+                        <div className="skill">
+                            <i className="devicon-python-plain-wordmark colored"></i>
+                        </div>
+                        <div className="skill">
+                            <i className="devicon-c-plain colored"></i>
+                        </div>
+                        <div className="skill">
+                            <i className="devicon-cplusplus-plain colored"></i>
+                        </div>
+                    </div>
+                    <div className="skillBox">
+                        <div className="skill">
+                            <i className="devicon-javascript-plain colored"></i>
+                        </div>
+                        <div className="skill">
+                            <i className="devicon-html5-plain-wordmark colored"></i>
+                        </div>
+                        <div className="skill">
+                            <i className="devicon-css3-plain-wordmark colored"></i>
+                        </div>
+                        <div className="skill">
+                            <i className="devicon-react-original-wordmark colored"></i>
+                        </div>
+                        <div className="skill">
+                            <i className="devicon-github-plain-wordmark colored"></i>
+                        </div>
+                    </div>
+                    <div className="skillBox">
+                        <div className="skill">
+                            <Icon icon={virtualReality} valign="center" />
+                        </div>
+                        <div className="skill">
+                            <Icon icon={augmentedReality} valign="center" />
+                        </div>
+                        <div className="skill">
+                            <Icon icon={unityIcon} valign="center" />
+                        </div>
+                        <div className="skill">
+                            <Icon icon={firebaseIcon} valign="center" />
+                        </div>
+                        <div className="skill">
+                            <i className="devicon-mysql-plain-wordmark colored"></i>
+                        </div>
+                    </div>
                 <div className="sectionHeader"><button className="btn btn-info btn-lg">Resume (PDF)</button></div>
             </div>
         );

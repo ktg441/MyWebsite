@@ -7,6 +7,8 @@ import "./css/Contact.css";
 import "./css/Animations.scss";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'devicon/devicon.css';
+import 'devicon/devicon-colors.css';
 
 import Intro from "./components/intro";
 import CustomNavbar from "./components/navbar";
