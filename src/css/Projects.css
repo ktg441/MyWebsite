@@ -14,3 +14,55 @@
     color: black;
     margin: 10px;
 }
+
+#projectFilters {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.filter {
+    margin: 0 1%;
+}
+
+#projectSliderContainer {
+    max-width: 55%;
+    max-height: 55%;
+    margin: auto;
+}
+
+.stack_desc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: wrap;
+}
+
+.left_stack {
+    flex: 50%;
+}
+
+.right_desc {
+    flex: 50%;
+}
+
+.inner {
+    padding: 5%;
+}
+
+.work {
+    background-color: #0069d9;
+}
+
+.game {
+    background-color: #28a745;
+}
+
+.web {
+    background-color: #e0a800;
+}
+
+.misc {
+    background-color: #dc3545;
+}
