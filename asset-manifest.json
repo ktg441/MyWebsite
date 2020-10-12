@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.7899d6ee.chunk.css",
-    "main.js": "/static/js/main.06006b23.chunk.js",
-    "main.js.map": "/static/js/main.06006b23.chunk.js.map",
+    "main.css": "/static/css/main.dd370279.chunk.css",
+    "main.js": "/static/js/main.1edef250.chunk.js",
+    "main.js.map": "/static/js/main.1edef250.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9b126251.js",
     "runtime-main.js.map": "/static/js/runtime-main.9b126251.js.map",
-    "static/css/2.56440c1d.chunk.css": "/static/css/2.56440c1d.chunk.css",
-    "static/js/2.9e1df9b6.chunk.js": "/static/js/2.9e1df9b6.chunk.js",
-    "static/js/2.9e1df9b6.chunk.js.map": "/static/js/2.9e1df9b6.chunk.js.map",
+    "static/css/2.01d799cc.chunk.css": "/static/css/2.01d799cc.chunk.css",
+    "static/js/2.de9b470c.chunk.js": "/static/js/2.de9b470c.chunk.js",
+    "static/js/2.de9b470c.chunk.js.map": "/static/js/2.de9b470c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0921d8e8754d8f714fa3e59da9837723.js": "/precache-manifest.0921d8e8754d8f714fa3e59da9837723.js",
+    "precache-manifest.76638dbf9193555d8026eaeea8a20af0.js": "/precache-manifest.76638dbf9193555d8026eaeea8a20af0.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.56440c1d.chunk.css.map": "/static/css/2.56440c1d.chunk.css.map",
-    "static/css/main.7899d6ee.chunk.css.map": "/static/css/main.7899d6ee.chunk.css.map",
-    "static/js/2.9e1df9b6.chunk.js.LICENSE.txt": "/static/js/2.9e1df9b6.chunk.js.LICENSE.txt",
+    "static/css/2.01d799cc.chunk.css.map": "/static/css/2.01d799cc.chunk.css.map",
+    "static/css/main.dd370279.chunk.css.map": "/static/css/main.dd370279.chunk.css.map",
+    "static/js/2.de9b470c.chunk.js.LICENSE.txt": "/static/js/2.de9b470c.chunk.js.LICENSE.txt",
     "static/media/CDesign_Logo.svg": "/static/media/CDesign_Logo.a64d58db.svg",
     "static/media/EcolabLogo.svg": "/static/media/EcolabLogo.3cf6136a.svg",
     "static/media/KiranPumpkingPatch.jpg": "/static/media/KiranPumpkingPatch.bcf25efb.jpg",
@@ -27,9 +27,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9b126251.js",
-    "static/css/2.56440c1d.chunk.css",
-    "static/js/2.9e1df9b6.chunk.js",
-    "static/css/main.7899d6ee.chunk.css",
-    "static/js/main.06006b23.chunk.js"
+    "static/css/2.01d799cc.chunk.css",
+    "static/js/2.de9b470c.chunk.js",
+    "static/css/main.dd370279.chunk.css",
+    "static/js/main.1edef250.chunk.js"
   ]
 }
