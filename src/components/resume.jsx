@@ -4,6 +4,7 @@ import Downloads from "./downloads";
 
 import Icon from '@iconify/react';
 import unityIcon from '@iconify/icons-logos/unity';
+import unrealIcon from '@iconify/icons-mdi/unreal';
 import firebaseIcon from '@iconify/icons-logos/firebase';
 import virtualReality from '@iconify/icons-mdi/virtual-reality';
 import augmentedReality from '@iconify/icons-mdi/augmented-reality';
@@ -170,10 +171,10 @@ class Resume extends Component {
                             <Icon icon={unityIcon} valign="center" />
                         </div>
                         <div className="skill">
-                            <Icon icon={firebaseIcon} valign="center" />
+                            <Icon icon={unrealIcon} valign="center" />
                         </div>
                         <div className="skill">
-                            <i className="devicon-mysql-plain-wordmark colored"></i>
+                            <Icon icon={firebaseIcon} valign="center" />
                         </div>
                     </div>
                 <div className="sectionHeader">Download Resume</div>

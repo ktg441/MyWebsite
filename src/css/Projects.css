@@ -27,8 +27,8 @@
 }
 
 #projectSliderContainer {
-    max-width: 55%;
-    max-height: 55%;
+    max-width: 57%;
+    max-height: 57%;
     margin: auto;
 }
 
@@ -41,14 +41,39 @@
 
 .left_stack {
     flex: 50%;
+    margin: auto;
 }
 
 .right_desc {
+    overflow: scroll;
     flex: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: medium;
+    font-size: 1vw;
+    color: white;
 }
 
 .inner {
-    padding: 5%;
+    padding: 3%;
+}
+
+.colImg {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.projectDate {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    font-size: large;
+    font-size: 1.1vw;
+}
+
+.footnote {
+    font-size: x-small;
+    font-size: 0.7vw;
 }
 
 .work {
