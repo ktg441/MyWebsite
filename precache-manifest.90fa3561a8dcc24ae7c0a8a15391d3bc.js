@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05f3b2260cb9bcd46516be578cbd00a9",
+    "revision": "0d075bda57bedbe547d45c45563609f7",
     "url": "/index.html"
   },
   {
-    "revision": "ec540f2efafa154476b9",
+    "revision": "56c82ccc8545f6b88510",
     "url": "/static/css/2.01d799cc.chunk.css"
   },
   {
-    "revision": "538593f167d5f9c17bf1",
-    "url": "/static/css/main.0864737f.chunk.css"
+    "revision": "aeefb9b3553de7af29ad",
+    "url": "/static/css/main.f4dc6f3c.chunk.css"
   },
   {
-    "revision": "ec540f2efafa154476b9",
-    "url": "/static/js/2.29a67582.chunk.js"
+    "revision": "56c82ccc8545f6b88510",
+    "url": "/static/js/2.0aa7025b.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/static/js/2.29a67582.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.0aa7025b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "538593f167d5f9c17bf1",
-    "url": "/static/js/main.25d4ca0a.chunk.js"
+    "revision": "aeefb9b3553de7af29ad",
+    "url": "/static/js/main.b6e5f20f.chunk.js"
   },
   {
     "revision": "420d11f43645d04fc865",
@@ -38,6 +38,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e047fe8860dacce77cbd7f16a27debac",
     "url": "/static/media/Blockly-01.e047fe88.svg"
+  },
+  {
+    "revision": "99268caec4b3ad43c17d04d077e0a9b6",
+    "url": "/static/media/BoilermakeGame.99268cae.jpg"
+  },
+  {
+    "revision": "b5bde02b810aa2e280c858593f2374ad",
+    "url": "/static/media/BoilermakeGame2.b5bde02b.jpg"
   },
   {
     "revision": "a64d58db88a89c3c8e40e38523d0eaa7",
@@ -62,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e2c5544b922341417cbd04143dbe0b96",
     "url": "/static/media/Google-Cloud-Platform-01.e2c5544b.svg"
+  },
+  {
+    "revision": "a1e8dea0bb8558f120af1dc0ef25dec7",
+    "url": "/static/media/Java-01.a1e8dea0.svg"
   },
   {
     "revision": "251449d6965e788b741d439cada189c5",
@@ -100,12 +112,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/RSALogo.542c2e1a.svg"
   },
   {
+    "revision": "03e21baffb4e2e6efc963f91c38f5237",
+    "url": "/static/media/React-01.03e21baf.svg"
+  },
+  {
     "revision": "17121e1a8ef565e0af3606331d7ce3ed",
     "url": "/static/media/Resume.17121e1a.pdf"
   },
   {
     "revision": "084cc2c079dbd57fbd9d226e0b943f5b",
     "url": "/static/media/ResumeWord.084cc2c0.docx"
+  },
+  {
+    "revision": "8adc822aa5e12d06b8d01780704865b3",
+    "url": "/static/media/Typescript-01.8adc822a.svg"
   },
   {
     "revision": "345f15ddd6f680f5daaa6a53879587c5",
