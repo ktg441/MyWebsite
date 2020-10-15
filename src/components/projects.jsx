@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 
+import ReactPlayer from "react-player";
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import { Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
+import BoilermakeGameScreenshot1 from '../media/projects/BoilermakeGame.jpg';
+import BoilermakeGameScreenshot2 from '../media/projects/BoilermakeGame2.jpg';
 
 import AndroidLogo from '../media/projects/Android-Robot/Android-Robot-01.svg';
 import ArduinoLogo from '../media/projects/Arduino/Arduino-01.svg';
@@ -11,10 +17,13 @@ import ElasticSearchLogo from '../media/projects/Elasticsearch/Elasticsearch-01.
 import BlocklyLogo from '../media/projects/Blockly/Blockly-01.svg';
 import FirestoreLogo from '../media/projects/Firestore/Firestore-01.svg';
 import GoogleCloudLogo from '../media/projects/Google-Cloud-Platform/Google-Cloud-Platform-01.svg';
+import JavaLogo from '../media/projects/Java/Java-01.svg';
 import JSLogo from '../media/projects/JavaScript/JavaScript-01.svg';
 import KibanaLogo from '../media/projects/Kibana/Kibana-01.svg';
 import PuppeteerLogo from '../media/projects/Puppeteer/Puppeteer-01.svg';
 import PythonLogo from '../media/projects/Python/Python-01.svg';
+import ReactLogo from '../media/projects/React/React-01.svg';
+import TypeScriptLogo from '../media/projects/Typescript/Typescript-01.svg'
 import UnityEngineLogo from '../media/projects/Unity-Game-Engine/Unity-Game-Engine-01.svg';
 
 
@@ -36,10 +45,10 @@ class Projects extends Component {
         this.renderMP3164_1 = this.renderMP3164_1.bind(this);
         this.renderMP3164_2 = this.renderMP3164_2.bind(this);
         this.renderThreatIntel = this.renderThreatIntel.bind(this);
+        this.renderThisWebsite = this.renderThisWebsite.bind(this);
+        this.renderBoilermakeGame = this.renderBoilermakeGame.bind(this);
         this.renderBPMHelper = this.renderBPMHelper.bind(this);
-        this.renderSampleGame = this.renderSampleGame.bind(this);
-        this.renderSampleWeb = this.renderSampleWeb.bind(this);
-        this.renderSampleMisc = this.renderSampleMisc.bind(this);
+        this.renderCookingGustavo = this.renderCookingGustavo.bind(this);
     }
 
     /* When the component loads... */
@@ -51,12 +60,13 @@ class Projects extends Component {
     applyFilters() {
         let filteredProjects = [];
 
+        filteredProjects.push(this.renderThisWebsite());
         filteredProjects.push(this.renderMP3164_1());
         filteredProjects.push(this.renderMP3164_2());
-        filteredProjects.push(this.renderSampleGame());
         filteredProjects.push(this.renderThreatIntel());
+        filteredProjects.push(this.renderBoilermakeGame());
         filteredProjects.push(this.renderBPMHelper());
-        filteredProjects.push(this.renderSampleMisc());
+        filteredProjects.push(this.renderCookingGustavo());
 
         this.setState({
             toRender: filteredProjects.filter(x => x) //remove nulls
@@ -259,31 +269,71 @@ class Projects extends Component {
         return null;
     }
 
-    renderSampleGame() {
-        if (this.state.filters["Game"]) {
-            return (
-                <div className="stack_desc game">
-                    <div className="left_stack inner">
-                        <p>Hey</p>
-                    </div>
-                    <div className="right_desc inner">
-                        <p>Hi</p>
-                    </div>
-                </div> 
-            );
-        }
-        return null;
-    }
-
-    renderSampleWeb() {
+    renderThisWebsite() {
         if (this.state.filters["Web"]) {
             return (
-                <div className="stack_desc web">
+                <div id="ThisSite" className="stack_desc web">
+                    <div className="projectDate">
+                        <u><b>May 2020 - October 2020</b></u>
+                    </div>
                     <div className="left_stack inner">
-                        <p>Hey</p>
+                        <div style={{ width: '50%', margin: '0 auto' }}>
+                            <div style={{ height: '50%'}}>
+                                <img src={ReactLogo} className="colImg" alt="React Logo" />
+                            </div>
+                            <div style={{ height: '50%'}}>
+                                <img src={TypeScriptLogo} className="colImg" alt="TypeScript Logo" />
+                            </div>
+                        </div>
                     </div>
                     <div className="right_desc inner">
-                        <p>Hi</p>
+                        <u><b>My Personal Website</b></u>
+                        <p>
+                            Yes! This website was developed by me using my prior experience creatin with React. 
+                            I created this website by myself using React and serves as a personal portfolio which I will continue to update as my life changes. 
+                            Feel free to send feedback or any issues you see to me as I'm still working through various compatibility issues between various browsers and mobile resolutions. 
+                        </p>
+                    </div>
+                </div>
+            );
+        }
+        return null;
+    }
+
+    renderBoilermakeGame() {
+        if (this.state.filters["Game"]) {
+            return (
+                <div id="BoilermakeGame" className="stack_desc game">
+                    <div className="projectDate">
+                        <u><b>January 2020</b></u>
+                    </div>
+                    <div className="left_stack inner">
+                        <div style={{ display: 'inline-block', width: '50%'}}>
+                            <div style={{ height: '50%'}}>
+                                <img src={UnityEngineLogo} className="colImg" alt="Unity Engine Logo" />
+                            </div>
+                            <div style={{ height: '50%'}}>
+                                <img src={BoilermakeGameScreenshot2} className="colImg" alt="Editor screenshot from the Keep Talking or Suffer a Windows Update game" />
+                            </div>
+                        </div>
+                        <div style={{ display: 'inline-block', width: '50%'}}>
+                            <div style={{ height: '50%'}}>
+                                <img src={BoilermakeGameScreenshot1} className="colImg" alt="Screenshot from the Keep Talking or Suffer a Windows Update game" />
+                            </div>
+                            <div style={{ height: '50%'}}>
+                                <img src={JavaLogo} className="colImg" alt="Java Logo" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="right_desc inner">
+                        <u><b>Keep Talking or Suffer a Windows Update</b></u>
+                        <p>
+                            This project was created during a 36-hour hackathon project and completed with 1 other teammate. 
+                            We created a co-operative Virtual Reality (VR) game that achieves communication between an Oculus Quest and a PC through Java sockets. 
+                            The backend creates a randomly-generated timed puzzle for the two players to figure out based on visuals that each other are seeing in their respective clients. 
+                            I handled the creation VR app and PC client in Unity as well as making the basic visuals and interactivity within our timeframe. 
+                        </p>
+                        <a className="whiteLink" href='https://github.com/ktg441/BoilermakeGame' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} />Click here for the Github Repo</a>
                     </div>
                 </div> 
             );
@@ -291,15 +341,31 @@ class Projects extends Component {
         return null;
     }
 
-    renderSampleMisc() {
-        if (this.state.filters["Misc"]) {
+    renderCookingGustavo() {
+        if (this.state.filters["Game"]) {
             return (
-                <div className="stack_desc misc">
-                    <div className="left_stack inner">
-                        <p>Hey</p>
+                <div id="CookingGustavo" className="stack_desc game">
+                    <div className="projectDate">
+                        <u><b>September 2019 - October 2019</b></u>
+                    </div>
+                    <div className="left_stack">
+                        <div style={{ margin: '5%' }}>
+                            <div style={{ maxHeight: '70%'}}>
+                                <ReactPlayer volume='0' muted='true' width='100%' height='100%' url="https://www.youtube.com/watch?v=sw_XTq0x9M4" />
+                            </div>
+                        </div>
                     </div>
                     <div className="right_desc inner">
-                        <p>Hi</p>
+                        <u><b>Cookin' Boiler</b></u>
+                        <p>
+                            This project was my first attempt at a full VR experience with a beginning and an ending. 
+                            I created this game with 1 teammate over the course of 4 weeks where I focused on all of the VR integration, and my teammate focused on some custom 3D models. 
+                            This game was created with Unity and was built for Oculus devices. 
+                            If I had more time with the game, I would fix a lot of the 3D colliders (since there is a lot of clashing) and floating UI.
+                        </p>
+                        <a className="whiteLink" href='https://github.com/ktg441/Cookin-Boiler' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} />Click here for the Github Repo</a>
+                        <br></br>
+                        <a className="whiteLink" href='https://www.youtube.com/watch?v=sw_XTq0x9M4' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} />Click here for the full Youtube video demo</a>
                     </div>
                 </div> 
             );
