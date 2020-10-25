@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d075bda57bedbe547d45c45563609f7",
+    "revision": "2417942e505dc6f9657037772e426545",
     "url": "/index.html"
   },
   {
-    "revision": "56c82ccc8545f6b88510",
-    "url": "/static/css/2.01d799cc.chunk.css"
+    "revision": "e13da54531299f8de7ea",
+    "url": "/static/css/2.723ac7b7.chunk.css"
   },
   {
-    "revision": "aeefb9b3553de7af29ad",
-    "url": "/static/css/main.f4dc6f3c.chunk.css"
+    "revision": "edb4a2fbe86ad06ea251",
+    "url": "/static/css/main.0f9daedd.chunk.css"
   },
   {
-    "revision": "56c82ccc8545f6b88510",
-    "url": "/static/js/2.0aa7025b.chunk.js"
+    "revision": "e13da54531299f8de7ea",
+    "url": "/static/js/2.c5e7408d.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/static/js/2.0aa7025b.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.c5e7408d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aeefb9b3553de7af29ad",
-    "url": "/static/js/main.b6e5f20f.chunk.js"
+    "revision": "edb4a2fbe86ad06ea251",
+    "url": "/static/js/main.4fe2d0ef.chunk.js"
   },
   {
     "revision": "420d11f43645d04fc865",
@@ -88,6 +88,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/KiranPumpkingPatch.bcf25efb.jpg"
   },
   {
+    "revision": "17121e1a8ef565e0af3606331d7ce3ed",
+    "url": "/static/media/Kiran_Payne_Resume.17121e1a.pdf"
+  },
+  {
+    "revision": "084cc2c079dbd57fbd9d226e0b943f5b",
+    "url": "/static/media/Kiran_Payne_ResumeWord.084cc2c0.docx"
+  },
+  {
     "revision": "89f7266d2a3897b5ed46505e70d4a89d",
     "url": "/static/media/Logo.89f7266d.png"
   },
@@ -108,20 +116,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Python-01.ac9e6abb.svg"
   },
   {
+    "revision": "e2c357313dacf6c653c983f88174e84e",
+    "url": "/static/media/Quizwiz.e2c35731.jpg"
+  },
+  {
+    "revision": "64b5ce7723abe9d481c3a4aad3ca8aa1",
+    "url": "/static/media/Quizwiz2.64b5ce77.jpg"
+  },
+  {
     "revision": "542c2e1a06cce334f65ad25693e829a2",
     "url": "/static/media/RSALogo.542c2e1a.svg"
   },
   {
     "revision": "03e21baffb4e2e6efc963f91c38f5237",
     "url": "/static/media/React-01.03e21baf.svg"
-  },
-  {
-    "revision": "17121e1a8ef565e0af3606331d7ce3ed",
-    "url": "/static/media/Resume.17121e1a.pdf"
-  },
-  {
-    "revision": "084cc2c079dbd57fbd9d226e0b943f5b",
-    "url": "/static/media/ResumeWord.084cc2c0.docx"
   },
   {
     "revision": "8adc822aa5e12d06b8d01780704865b3",
