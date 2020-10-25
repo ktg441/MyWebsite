@@ -107,7 +107,7 @@
     position: absolute;
     transform-origin: center;
     top: 30%;
-    width: 100px;
+    width: 6.5vw;
     min-height: 4px;
     background: rgb(204, 19, 148);
     animation-name: spin, expand, bounce_out, fade_out;
@@ -121,7 +121,7 @@
   .loadLine {
     position: absolute;
     top: 30%;
-    width: 100px;
+    width: 6.5vw;
     min-height: 4px;
     background: rgb(204, 19, 148);
     animation-name: spin, fade_out;
@@ -143,7 +143,7 @@
 
   @keyframes expand {
     100% {
-      transform: scaleX(9);
+      transform: scaleX(8.5);
     }
   }
 
