@@ -57,7 +57,7 @@ class Resume extends Component {
                         <div id="cDesc" className="descDiv">
                             <ul className="list-unstyled">
                                 <li><u>Software Developer/Research Assistant</u></li>
-                                <li className = "descSub"><i>February 2020 - Present</i></li>
+                                <li className = "descSub"><i>C Design Lab • February 2020 - Present</i></li>
                                 <ul className="text-muted subList descSub">
                                     <li>Lead programmer for 6 person research team</li>
                                     <li>Created and modernized aspects of an AR-IoT System used for research projects</li>
@@ -74,7 +74,7 @@ class Resume extends Component {
                         <div id="ecoDesc" className="descDiv">
                             <ul className="list-unstyled">
                                 <li><u>IT Intern</u></li>
-                                <li className = "descSub"><i>June 2020 - August 2020</i></li>
+                                <li className = "descSub"><i>Ecolab • June 2020 - August 2020</i></li>
                                 <ul className="text-muted subList  descSub">
                                     <li>Created a foundational Threat Intelligence System that collects critical security data from various APIs</li>
                                     <li>Visualized ingested data to create consolidated Intelligence Dashboards for InfoSec team</li>
@@ -91,7 +91,7 @@ class Resume extends Component {
                         <div id="rsaDesc" className="descDiv">
                             <ul className="list-unstyled">
                                 <li><u>Shift Manager/Senior Fraud Analyst</u></li>
-                                <li className = "descSub"><i>January 2018 - February 2020</i></li>
+                                <li className = "descSub"><i>RSA Security • January 2018 - February 2020</i></li>
                                 <ul className="text-muted subList descSub">
                                     <li>Managed corporate inbox and phone number as a 24/7 point of contact for 100+ financial institutions around the world</li>
                                     <li>Created a tool that automated an entire role at our site</li>
