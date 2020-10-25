@@ -6,9 +6,12 @@ import 'react-awesome-slider/dist/styles.css';
 import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 import BoilermakeGameScreenshot1 from '../media/projects/BoilermakeGame.jpg';
 import BoilermakeGameScreenshot2 from '../media/projects/BoilermakeGame2.jpg';
+import QuizwizScreenshot1 from '../media/projects/Quizwiz.jpg';
+import QuizwizScreenshot2 from '../media/projects/Quizwiz2.jpg';
 
 import AndroidLogo from '../media/projects/Android-Robot/Android-Robot-01.svg';
 import ArduinoLogo from '../media/projects/Arduino/Arduino-01.svg';
@@ -49,6 +52,8 @@ class Projects extends Component {
         this.renderBoilermakeGame = this.renderBoilermakeGame.bind(this);
         this.renderBPMHelper = this.renderBPMHelper.bind(this);
         this.renderCookingGustavo = this.renderCookingGustavo.bind(this);
+        this.renderOnQueue = this.renderOnQueue.bind(this);
+        this.renderQuizwiz = this.renderQuizwiz.bind(this);
     }
 
     /* When the component loads... */
@@ -64,9 +69,11 @@ class Projects extends Component {
         filteredProjects.push(this.renderMP3164_1());
         filteredProjects.push(this.renderMP3164_2());
         filteredProjects.push(this.renderThreatIntel());
+        filteredProjects.push(this.renderOnQueue());
         filteredProjects.push(this.renderBoilermakeGame());
         filteredProjects.push(this.renderBPMHelper());
         filteredProjects.push(this.renderCookingGustavo());
+        filteredProjects.push(this.renderQuizwiz());
 
         this.setState({
             toRender: filteredProjects.filter(x => x) //remove nulls
@@ -349,9 +356,9 @@ class Projects extends Component {
                         <u><b>September 2019 - October 2019</b></u>
                     </div>
                     <div className="left_stack">
-                        <div style={{ margin: '5%' }}>
+                        <div style={{ margin: '3%' }}>
                             <div style={{ maxHeight: '70%'}}>
-                                <ReactPlayer volume='0' muted='true' width='100%' height='100%' url="https://www.youtube.com/watch?v=sw_XTq0x9M4" />
+                                <ReactPlayer volume={0} muted={true} width='auto' height='28vh' url="https://www.youtube.com/watch?v=sw_XTq0x9M4" />
                             </div>
                         </div>
                     </div>
@@ -366,6 +373,72 @@ class Projects extends Component {
                         <a className="whiteLink" href='https://github.com/ktg441/Cookin-Boiler' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} />Click here for the Github Repo</a>
                         <br></br>
                         <a className="whiteLink" href='https://www.youtube.com/watch?v=sw_XTq0x9M4' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} />Click here for the full Youtube video demo</a>
+                    </div>
+                </div> 
+            );
+        }
+        return null;
+    }
+
+    renderOnQueue() {
+        if (this.state.filters["Web"]) {
+            return (
+                <div id="OnQueue" className="stack_desc web">
+                    <div className="projectDate">
+                        <u><b>January 2020 - May 2020</b></u>
+                    </div>
+                    <div className="left_stack">
+                        <div style={{ margin: '3%' }}>
+                            <div style={{ maxHeight: '70%'}}>
+                                <ReactPlayer volume={0} muted={true} width='auto' height='28vh' url="https://www.youtube.com/watch?v=uQor8VXAzY8" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="right_desc inner">
+                        <u><b>OnQueue</b></u>
+                        <p>
+                            This project was a group project with a team size of 6 and was my capstone project for Software Engineering at Purdue. 
+                            We created a website that let people host a public queue of music so anyone in the room can add a song they want to listen to. 
+                            We used React for the frontend and Java sockets for our backend, as well as connected the site to the Spotify API. 
+                            My main job was to create and maintain our backend Java server. 
+                            I created what was essentially a chat server between users adding songs to the queue and a room host receiving the song credentials. 
+                        </p>
+                        <a className="whiteLink" href="https://onqueueplayer.web.app/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faExternalLinkAlt} />Click here to see the website</a>
+                        <br></br>
+                        <a className="whiteLink" href="https://www.youtube.com/watch?v=uQor8VXAzY8" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} />Click here for the full Youtube video demo</a>
+                    </div>
+                </div> 
+            );
+        }
+        return null;
+    }
+
+    renderQuizwiz() {
+        if (this.state.filters["Web"]) {
+            return (
+                <div id="Quizwiz" className="stack_desc web">
+                    <div className="projectDate">
+                        <u><b>August 2019 - November 2019</b></u>
+                    </div>
+                    <div className="left_stack inner">
+                        <div>
+                            <div style={{ width: '100%', height: '50%', marginBottom: '5%'}}>
+                                <img src={QuizwizScreenshot1} width="100%" className="colImg" alt="React Logo" />
+                            </div>
+                            <div style={{ width: '100%', height: '50%'}}>
+                                <img src={QuizwizScreenshot2} width="100%" className="colImg" alt="TypeScript Logo" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="right_desc inner">
+                        <u><b>Quizwiz</b></u>
+                        <p>
+                            This project was a group project with a team size of 5 and a timeline of 3 months. 
+                            We created a website that allows people to make, take, and share their very own custom quizzes. 
+                            We used React for the frontend and Firebase for our backend. 
+                            My main job was to connect the frontend and the backend and manage user data in our database. 
+                        </p>
+                        <a className="whiteLink" href='https://quizwiz-cs408.firebaseapp.com/' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faExternalLinkAlt} />Click here to see the website</a>
                     </div>
                 </div> 
             );

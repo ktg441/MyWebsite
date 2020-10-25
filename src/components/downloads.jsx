@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import PDF from '../documents/Resume.pdf';
-import DOCX from '../documents/ResumeWord.docx';
+import PDF from '../documents/Kiran_Payne_Resume.pdf';
+import DOCX from '../documents/Kiran_Payne_ResumeWord.docx';
 
 /*
 Component that gives download links to my resume
