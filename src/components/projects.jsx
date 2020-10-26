@@ -12,6 +12,10 @@ import BoilermakeGameScreenshot1 from '../media/projects/BoilermakeGame.jpg';
 import BoilermakeGameScreenshot2 from '../media/projects/BoilermakeGame2.jpg';
 import QuizwizScreenshot1 from '../media/projects/Quizwiz.jpg';
 import QuizwizScreenshot2 from '../media/projects/Quizwiz2.jpg';
+import DodgeEmScreenshot1 from '../media/projects/DodgeEm.jpg';
+import DodgeEmScreenshot2 from '../media/projects/DodgeEm2.jpg';
+import ZombieScreenshot1 from '../media/projects/Zombie.png';
+import ZombieScreenshot2 from '../media/projects/Zombie2.png';
 
 import AndroidLogo from '../media/projects/Android-Robot/Android-Robot-01.svg';
 import ArduinoLogo from '../media/projects/Arduino/Arduino-01.svg';
@@ -54,6 +58,9 @@ class Projects extends Component {
         this.renderCookingGustavo = this.renderCookingGustavo.bind(this);
         this.renderOnQueue = this.renderOnQueue.bind(this);
         this.renderQuizwiz = this.renderQuizwiz.bind(this);
+        this.renderDodgeEm = this.renderDodgeEm.bind(this);
+        this.renderZombieGame = this.renderZombieGame.bind(this);
+        this.renderMonkeyBall = this.renderMonkeyBall.bind(this);
     }
 
     /* When the component loads... */
@@ -70,10 +77,13 @@ class Projects extends Component {
         filteredProjects.push(this.renderMP3164_2());
         filteredProjects.push(this.renderThreatIntel());
         filteredProjects.push(this.renderOnQueue());
+        filteredProjects.push(this.renderMonkeyBall());
         filteredProjects.push(this.renderBoilermakeGame());
         filteredProjects.push(this.renderBPMHelper());
         filteredProjects.push(this.renderCookingGustavo());
         filteredProjects.push(this.renderQuizwiz());
+        filteredProjects.push(this.renderDodgeEm());
+        filteredProjects.push(this.renderZombieGame());
 
         this.setState({
             toRender: filteredProjects.filter(x => x) //remove nulls
@@ -115,7 +125,7 @@ class Projects extends Component {
     renderMP3164_1() {
         if (this.state.filters["Work"]) {
             return (
-                <div id="MP3164_1" className="stack_desc work">
+                <div key="MP3164_1" id="MP3164_1" className="stack_desc work">
                     <div className="projectDate">
                         <u><b>July 2020 - August 2020</b></u>
                     </div>
@@ -158,7 +168,7 @@ class Projects extends Component {
     renderMP3164_2() {
         if (this.state.filters["Work"]) {
             return (
-                <div id="MP3164_2" className="stack_desc work">
+                <div key="MP3164_2" id="MP3164_2" className="stack_desc work">
                     <div className="projectDate">
                         <u><b>March 2020 - May 2020</b></u>
                     </div>
@@ -202,7 +212,7 @@ class Projects extends Component {
     renderThreatIntel() {
         if (this.state.filters["Work"]) {
             return (
-                <div id="ThreatIntel" className="stack_desc work">
+                <div key="ThreatIntel" id="ThreatIntel" className="stack_desc work">
                     <div className="projectDate">
                         <u><b>June 2020 - August 2020</b></u>
                     </div>
@@ -245,7 +255,7 @@ class Projects extends Component {
     renderBPMHelper() {
         if (this.state.filters["Work"]) {
             return (
-                <div id="BPMHelper" className="stack_desc work">
+                <div key="BPMHelper" id="BPMHelper" className="stack_desc work">
                     <div className="projectDate">
                         <u><b>September 2019 - January 2020</b></u>
                     </div>
@@ -279,7 +289,7 @@ class Projects extends Component {
     renderThisWebsite() {
         if (this.state.filters["Web"]) {
             return (
-                <div id="ThisSite" className="stack_desc web">
+                <div key="ThisSite" id="ThisSite" className="stack_desc web">
                     <div className="projectDate">
                         <u><b>May 2020 - October 2020</b></u>
                     </div>
@@ -310,7 +320,7 @@ class Projects extends Component {
     renderBoilermakeGame() {
         if (this.state.filters["Game"]) {
             return (
-                <div id="BoilermakeGame" className="stack_desc game">
+                <div key="BoilermakeGame" id="BoilermakeGame" className="stack_desc game">
                     <div className="projectDate">
                         <u><b>January 2020</b></u>
                     </div>
@@ -351,7 +361,7 @@ class Projects extends Component {
     renderCookingGustavo() {
         if (this.state.filters["Game"]) {
             return (
-                <div id="CookingGustavo" className="stack_desc game">
+                <div key="CookingGustavo" id="CookingGustavo" className="stack_desc game">
                     <div className="projectDate">
                         <u><b>September 2019 - October 2019</b></u>
                     </div>
@@ -383,7 +393,7 @@ class Projects extends Component {
     renderOnQueue() {
         if (this.state.filters["Web"]) {
             return (
-                <div id="OnQueue" className="stack_desc web">
+                <div key="OnQueue" id="OnQueue" className="stack_desc web">
                     <div className="projectDate">
                         <u><b>January 2020 - May 2020</b></u>
                     </div>
@@ -413,20 +423,52 @@ class Projects extends Component {
         return null;
     }
 
+    renderMonkeyBall() {
+        if (this.state.filters["Game"]) {
+            return (
+                <div key="MonkeyBall" id="MonkeyBall" className="stack_desc game">
+                    <div className="projectDate">
+                        <u><b>April 2020</b></u>
+                    </div>
+                    <div className="left_stack">
+                        <div style={{ margin: '3%' }}>
+                            <div style={{ maxHeight: '70%'}}>
+                                <ReactPlayer volume={0} muted={true} width='auto' height='28vh' url="https://www.youtube.com/watch?v=8wluZn294xo" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="right_desc inner">
+                        <u><b>Virtual Reality Locomotion with Head Tilt</b></u>
+                        <p>
+                            This project was a mock research project that I completed with 1 partner. 
+                            My partner and I decided to research a different way of moving a VR character and see how it affected motion sickness. 
+                            We created a game that had you move a ball around an obstacle course (like Super Monkey Ball) with traditional controls and with the tilt controls. 
+                            We collected data in a mock study and drafted an entire research paper over the course of a month. 
+                        </p>
+                        <a className="whiteLink" href='https://github.com/ktg441/CS-490-Final-Project' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} />Click here for the Github Repo</a>
+                        <br></br>
+                        <a className="whiteLink" href='https://www.youtube.com/watch?v=8wluZn294xo' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} />Click here for the full Youtube video demo</a>
+                    </div>
+                </div> 
+            );
+        }
+        return null;
+    }
+
     renderQuizwiz() {
         if (this.state.filters["Web"]) {
             return (
-                <div id="Quizwiz" className="stack_desc web">
+                <div key="Quizwiz" id="Quizwiz" className="stack_desc web">
                     <div className="projectDate">
                         <u><b>August 2019 - November 2019</b></u>
                     </div>
                     <div className="left_stack inner">
                         <div>
                             <div style={{ width: '100%', height: '50%', marginBottom: '5%'}}>
-                                <img src={QuizwizScreenshot1} width="100%" className="colImg" alt="React Logo" />
+                                <img src={QuizwizScreenshot1} width="100%" className="colImg" alt="A screenshot of the UI for making a quiz" />
                             </div>
                             <div style={{ width: '100%', height: '50%'}}>
-                                <img src={QuizwizScreenshot2} width="100%" className="colImg" alt="TypeScript Logo" />
+                                <img src={QuizwizScreenshot2} width="100%" className="colImg" alt="A screenshot of the UI for statistics about a quiz" />
                             </div>
                         </div>
                     </div>
@@ -439,6 +481,74 @@ class Projects extends Component {
                             My main job was to connect the frontend and the backend and manage user data in our database. 
                         </p>
                         <a className="whiteLink" href='https://quizwiz-cs408.firebaseapp.com/' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faExternalLinkAlt} />Click here to see the website</a>
+                    </div>
+                </div> 
+            );
+        }
+        return null;
+    }
+
+    renderDodgeEm() {
+        if (this.state.filters["Web"]) {
+            return (
+                <div key="DodgeEm" id="DodgeEm" className="stack_desc web">
+                    <div className="projectDate">
+                        <u><b>April 2019</b></u>
+                    </div>
+                    <div className="left_stack inner">
+                        <div>
+                            <div style={{ width: '100%', height: '50%', marginBottom: '5%'}}>
+                                <img src={DodgeEmScreenshot1} width="100%" className="colImg" alt="A screenshot of the UI for selecting media" />
+                            </div>
+                            <div style={{ width: '100%', height: '50%'}}>
+                                <img src={DodgeEmScreenshot2} width="100%" className="colImg" alt="A screenshot of the UI for editing your profile" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="right_desc inner">
+                        <u><b>Dodge 'Em</b></u>
+                        <p>
+                            This project was a group project at the end of a Systems Programming course. 
+                            We created a website that allows people to browse media that filtered out certain personal triggers. 
+                            We used React for the frontend, Firebase for our backend and connected the site to the OMDB API. 
+                            My main job was to create the profile page and implement an edit mode feature so people could change their settings.  
+                        </p>
+                        <a className="whiteLink" href='https://github.com/keerko2218/CS252-Project/' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} />Click here for the Github Repo</a>
+                        <br></br>
+                        <a className="whiteLink" href='https://dodgeem-43d2c.web.app/' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faExternalLinkAlt} />Click here to see the website</a>
+                    </div>
+                </div> 
+            );
+        }
+        return null;
+    }
+
+    renderZombieGame() {
+        if (this.state.filters["Game"]) {
+            return (
+                <div key="ZombieGame" id="ZombieGame" className="stack_desc game">
+                    <div className="projectDate">
+                        <u><b>August 2016</b></u>
+                    </div>
+                    <div className="left_stack inner">
+                        <div>
+                            <div style={{ width: '100%', height: '50%', marginBottom: '5%'}}>
+                                <img src={ZombieScreenshot1} width="100%" className="colImg" alt="React Logo" />
+                            </div>
+                            <div style={{ width: '100%', height: '50%'}}>
+                                <img src={ZombieScreenshot2} width="100%" className="colImg" alt="TypeScript Logo" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="right_desc inner">
+                        <u><b>Attack of the Zombie Bananas</b></u>
+                        <p>
+                            This was my very first project in Unreal Engine 4 completed over 2 weeks at a summer camp in UC Irvine. 
+                            The premise of the game is you are defending yourself against endless waves of zombie bananas inside of an abandoned grocery store. 
+                            I learned how to navigate the game engine, as well as create basic 3D models in Autodesk Maya. 
+                            This project is what inspired me to pursue Computer Science in school and working inside of video game engines remains to be one of my favorite ways to program. 
+                        </p>
+                        <a className="whiteLink" href='https://kiranzombieproject.blogspot.com/2016/08/portfolio.html' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faExternalLinkAlt} />Click here to see a blog post with more information and screenshots</a>
                     </div>
                 </div> 
             );
