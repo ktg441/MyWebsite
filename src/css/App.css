@@ -79,3 +79,8 @@ html, body, #root, .App {
   margin: 0 auto;
   margin-left: 45%;
 }
+
+.rounded-pill-bottom {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
