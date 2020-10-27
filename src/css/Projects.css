@@ -7,6 +7,15 @@
     background-color: lightgray;
 }
 
+#projectsMobile {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 25%;
+    background-color: lightgray;
+}
+
 #projectHeader {
     text-align: center;
     font-weight: bold;
@@ -22,13 +31,31 @@
     margin: 10px;
 }
 
+#projectFiltersMobile {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+    margin: 10px;
+}
+
 .filter {
     margin: 0 1%;
+}
+
+.filterMobile {
+    margin: 0 1%;
+    font-size: 2vh;
 }
 
 #projectSliderContainer {
     max-width: 59%;
     max-height: 59%;
+    margin: auto;
+}
+
+#projectSliderContainerMobile {
+    max-width: 90%;
+    max-height: 90%;
     margin: auto;
 }
 

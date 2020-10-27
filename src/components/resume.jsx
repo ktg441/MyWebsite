@@ -15,6 +15,7 @@ import PurdueCS from "../media/Purdue_CS_Logo.svg";
 import CDesign from "../media/CDesign_Logo.svg";
 import Ecolab from "../media/EcolabLogo.svg";
 import RSA from "../media/RSALogo.svg";
+import MediaQuery from 'react-responsive';
 
 /*
 Component about my experience
@@ -33,153 +34,306 @@ class Resume extends Component {
 
     render() {
         return (
-            <div id="resume" className="siteHidden">
-                <div className="sectionHeader">Education</div>
-                <div id="education" className="section">
-                    <div id="schoolPic" className="picDiv">
-                        <img src={Purdue} alt="Purdue Logo" className="d-inline-block align-center roundedLogo leftShadow" />
-                    </div>
-                    <div id="schoolDesc" className="descDiv">
-                        <ul className="list-unstyled">
-                            <li><u>Bachelor of Science at Purdue University</u></li>
-                            <ul className="text-muted subList">
-                                <li>Major: Computer Science</li>
-                                <li>Minor: Entrepreneurship & Innovation</li>
-                                <li>GPA: 3.41/4.00</li>
-                                <li>Expected Graduation: December 2020</li>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-                <div className="sectionHeader">Work Experience</div>
-                <div id="workExperience">
-                    <div className="section">
-                        <div id="cDesc" className="descDiv">
-                            <ul className="list-unstyled">
-                                <li><u>Software Developer/Research Assistant</u></li>
-                                <li className = "descSub"><i>C Design Lab • February 2020 - Present</i></li>
-                                <ul className="text-muted subList descSub">
-                                    <li>Lead programmer for 6 person research team</li>
-                                    <li>Created and modernized aspects of an AR-IoT System used for research projects</li>
-                                    <li>Helped conduct research and user studies of mentioned system</li>
-                                    <li>Submitted manuscripts to ACM CHI 2021 (Conference on Human-Factors in Computer Systems) and ACM CSCW 2021 (Conference on Computer-Supported Cooperative Work and Social Computing)</li>
+            <React.Fragment>
+                <MediaQuery minDeviceWidth={768}>
+                    <div id="resume" className="siteHidden">
+                        <div className="sectionHeader">Education</div>
+                        <div id="education" className="section">
+                            <div id="schoolPic" className="picDiv">
+                                <img src={Purdue} alt="Purdue Logo" className="d-inline-block align-center roundedLogo leftShadow" />
+                            </div>
+                            <div id="schoolDesc" className="descDiv">
+                                <ul className="list-unstyled">
+                                    <li><u>Bachelor of Science at Purdue University</u></li>
+                                    <ul className="text-muted subList">
+                                        <li>Major: Computer Science</li>
+                                        <li>Minor: Entrepreneurship & Innovation</li>
+                                        <li>GPA: 3.41/4.00</li>
+                                        <li>Expected Graduation: December 2020</li>
+                                    </ul>
                                 </ul>
-                            </ul>
+                            </div>
                         </div>
-                        <div id="cPic" className="picDiv">
-                            <img src={CDesign} alt="Convergence Design Lab Logo" className="d-inline-block align-center roundedLogo rightShadow" />
+                        <div className="sectionHeader">Work Experience</div>
+                        <div id="workExperience">
+                            <div className="section">
+                                <div id="cDesc" className="descDiv">
+                                    <ul className="list-unstyled">
+                                        <li><u>Software Developer/Research Assistant</u></li>
+                                        <li className = "descSub"><i>C Design Lab • February 2020 - Present</i></li>
+                                        <ul className="text-muted subList descSub">
+                                            <li>Lead programmer for 6 person research team</li>
+                                            <li>Created and modernized aspects of an AR-IoT System used for research projects</li>
+                                            <li>Helped conduct research and user studies of mentioned system</li>
+                                            <li>Submitted manuscripts to ACM CHI 2021 (Conference on Human-Factors in Computer Systems) and ACM CSCW 2021 (Conference on Computer-Supported Cooperative Work and Social Computing)</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div id="cPic" className="picDiv">
+                                    <img src={CDesign} alt="Convergence Design Lab Logo" className="d-inline-block align-center roundedLogo rightShadow" />
+                                </div>
+                            </div>
+                            <div className="section">
+                                <div id="ecoDesc" className="descDiv">
+                                    <ul className="list-unstyled">
+                                        <li><u>IT Intern</u></li>
+                                        <li className = "descSub"><i>Ecolab • June 2020 - August 2020</i></li>
+                                        <ul className="text-muted subList  descSub">
+                                            <li>Created a foundational Threat Intelligence System that collects critical security data from various APIs</li>
+                                            <li>Visualized ingested data to create consolidated Intelligence Dashboards for InfoSec team</li>
+                                            <li>Began migration of all extraneous security data into one cental location to be incorporated in above system</li>
+                                            <li>Orchestrated and executed the company’s first hackathon for 20+ interns over 2 days</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div id="ecoPic" className="picDiv">
+                                    <img src={Ecolab} alt="Ecolab Logo" className="d-inline-block align-center roundedLogo rightShadow" />
+                                </div>
+                            </div>
+                            <div className="section">
+                                <div id="rsaDesc" className="descDiv">
+                                    <ul className="list-unstyled">
+                                        <li><u>Shift Manager/Senior Fraud Analyst</u></li>
+                                        <li className = "descSub"><i>RSA Security • January 2018 - February 2020</i></li>
+                                        <ul className="text-muted subList descSub">
+                                            <li>Managed corporate inbox and phone number as a 24/7 point of contact for 100+ financial institutions around the world</li>
+                                            <li>Created a tool that automated an entire role at our site</li>
+                                            <li>Redesigned the website that our site used for QA</li>
+                                            <li>Detected, analyzed, and shutdown fraudulent internet activity (Phishing, malware, brand abuse, trojans, etc.)</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div id="rsaPic" className="picDiv">
+                                    <img src={RSA} alt="RSA Logo" className="d-inline-block align-center roundedLogo rightShadow" />
+                                </div>
+                            </div>
+                            <div className="section">
+                                <div id="taDesc" className="descDiv">
+                                    <ul className="list-unstyled">
+                                        <li><u>Undergraduate Teaching Assistant</u></li>
+                                        <li className = "descSub"><i>Spring 2020: Systems Programming</i></li>
+                                        <ul className="text-muted subList descSub">
+                                            <li>Assisted in a lab section of 30+ students teaching topics related to shell programming and memory optimization</li>
+                                            <li>Helped shift course resources and lab materials online in response to the COVID-19 pandemic</li>
+                                        </ul>
+                                        <li className = "descSub"><i>Summer 2019: Object-Oriented Programming & Problem Solving in Java</i></li>
+                                        <ul className="text-muted subList descSub">
+                                            <li>Taught foundational programming skills and standards to lab section of 20+ novice CS students</li>
+                                            <li>Held regular office hours 3+ times a week to assist students with concepts and homework</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div id="taPic" className="picDiv">
+                                    <img src={PurdueCS} alt="Purdue CS Logo" className="d-inline-block align-center roundedLogo rightShadow" />
+                                </div>
+                            </div>
                         </div>
+                        <div className="sectionHeader">Skills</div>
+                            <div className="skillBox">
+                                <div className="skill">
+                                    <i className="devicon-java-plain-wordmark colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-csharp-plain colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-python-plain-wordmark colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-c-plain colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-cplusplus-plain colored"></i>
+                                </div>
+                            </div>
+                            <div className="skillBox">
+                                <div className="skill">
+                                    <i className="devicon-javascript-plain colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-html5-plain-wordmark colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-css3-plain-wordmark colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-react-original-wordmark colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-github-plain-wordmark colored"></i>
+                                </div>
+                            </div>
+                            <div className="skillBox">
+                                <div className="skill">
+                                    <Icon icon={virtualReality} valign="center" />
+                                </div>
+                                <div className="skill">
+                                    <Icon icon={augmentedReality} valign="center" />
+                                </div>
+                                <div className="skill">
+                                    <Icon icon={unityIcon} valign="center" />
+                                </div>
+                                <div className="skill">
+                                    <Icon icon={unrealIcon} valign="center" />
+                                </div>
+                                <div className="skill">
+                                    <Icon icon={firebaseIcon} valign="center" />
+                                </div>
+                            </div>
+                        <div className="sectionHeader">Download Resume</div>
+                        <Downloads />
                     </div>
-                    <div className="section">
-                        <div id="ecoDesc" className="descDiv">
-                            <ul className="list-unstyled">
-                                <li><u>IT Intern</u></li>
-                                <li className = "descSub"><i>Ecolab • June 2020 - August 2020</i></li>
-                                <ul className="text-muted subList  descSub">
-                                    <li>Created a foundational Threat Intelligence System that collects critical security data from various APIs</li>
-                                    <li>Visualized ingested data to create consolidated Intelligence Dashboards for InfoSec team</li>
-                                    <li>Began migration of all extraneous security data into one cental location to be incorporated in above system</li>
-                                    <li>Orchestrated and executed the company’s first hackathon for 20+ interns over 2 days</li>
+                </MediaQuery>
+                <MediaQuery maxDeviceWidth={767}>
+                    <div id="resumeMobile" className="siteHidden">
+                        <div className="sectionHeaderMobile">Education</div>
+                        <div id="education" className="section">
+                            <div id="schoolPic" className="picDiv">
+                                <img src={Purdue} alt="Purdue Logo" className="d-inline-block align-center roundedLogo leftShadow" />
+                            </div>
+                            <div id="schoolDescMobile" className="descDivMobile">
+                                <ul className="list-unstyled">
+                                    <li><u>Bachelor of Science at Purdue University</u></li>
+                                    <ul className="text-muted subList">
+                                        <li>Major: Computer Science</li>
+                                        <li>Minor: Entrepreneurship & Innovation</li>
+                                        <li>GPA: 3.41/4.00</li>
+                                        <li>Expected Graduation: December 2020</li>
+                                    </ul>
                                 </ul>
-                            </ul>
+                            </div>
                         </div>
-                        <div id="ecoPic" className="picDiv">
-                            <img src={Ecolab} alt="Ecolab Logo" className="d-inline-block align-center roundedLogo rightShadow" />
+                        <div className="sectionHeaderMobile">Work Experience</div>
+                        <div id="workExperience">
+                            <div className="section">
+                                <div id="cDesc" className="descDivMobile">
+                                    <ul className="list-unstyled">
+                                        <li><u>Software Developer/Research Assistant</u></li>
+                                        <li className = "descSubMobile"><i>C Design Lab • February 2020 - Present</i></li>
+                                        <ul className="text-muted subList descSubMobile">
+                                            <li>Lead programmer for 6 person research team</li>
+                                            <li>Created and modernized aspects of an AR-IoT System used for research projects</li>
+                                            <li>Helped conduct research and user studies of mentioned system</li>
+                                            <li>Submitted manuscripts to ACM CHI 2021 (Conference on Human-Factors in Computer Systems) and ACM CSCW 2021 (Conference on Computer-Supported Cooperative Work and Social Computing)</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div id="cPic" className="picDiv">
+                                    <img src={CDesign} alt="Convergence Design Lab Logo" className="d-inline-block align-center roundedLogo rightShadow" />
+                                </div>
+                            </div>
+                            <div className="section">
+                                <div id="ecoDesc" className="descDivMobile">
+                                    <ul className="list-unstyled">
+                                        <li><u>IT Intern</u></li>
+                                        <li className = "descSubMobile"><i>Ecolab • June 2020 - August 2020</i></li>
+                                        <ul className="text-muted subList  descSubMobile">
+                                            <li>Created a foundational Threat Intelligence System that collects critical security data from various APIs</li>
+                                            <li>Visualized ingested data to create consolidated Intelligence Dashboards for InfoSec team</li>
+                                            <li>Began migration of all extraneous security data into one cental location to be incorporated in above system</li>
+                                            <li>Orchestrated and executed the company’s first hackathon for 20+ interns over 2 days</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div id="ecoPic" className="picDiv">
+                                    <img src={Ecolab} alt="Ecolab Logo" className="d-inline-block align-center roundedLogo rightShadow" />
+                                </div>
+                            </div>
+                            <div className="section">
+                                <div id="rsaDesc" className="descDivMobile">
+                                    <ul className="list-unstyled">
+                                        <li><u>Shift Manager/Senior Fraud Analyst</u></li>
+                                        <li className = "descSubMobile"><i>RSA Security • January 2018 - February 2020</i></li>
+                                        <ul className="text-muted subList descSubMobile">
+                                            <li>Managed corporate inbox and phone number as a 24/7 point of contact for 100+ financial institutions around the world</li>
+                                            <li>Created a tool that automated an entire role at our site</li>
+                                            <li>Redesigned the website that our site used for QA</li>
+                                            <li>Detected, analyzed, and shutdown fraudulent internet activity (Phishing, malware, brand abuse, trojans, etc.)</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div id="rsaPic" className="picDiv">
+                                    <img src={RSA} alt="RSA Logo" className="d-inline-block align-center roundedLogo rightShadow" />
+                                </div>
+                            </div>
+                            <div className="section">
+                                <div id="taDesc" className="descDivMobile">
+                                    <ul className="list-unstyled">
+                                        <li><u>Undergraduate Teaching Assistant</u></li>
+                                        <li className = "descSubMobile"><i>Spring 2020: Systems Programming</i></li>
+                                        <ul className="text-muted subList descSubMobile">
+                                            <li>Assisted in a lab section of 30+ students teaching topics related to shell programming and memory optimization</li>
+                                            <li>Helped shift course resources and lab materials online in response to the COVID-19 pandemic</li>
+                                        </ul>
+                                        <li className = "descSubMobile"><i>Summer 2019: Object-Oriented Programming & Problem Solving in Java</i></li>
+                                        <ul className="text-muted subList descSubMobile">
+                                            <li>Taught foundational programming skills and standards to lab section of 20+ novice CS students</li>
+                                            <li>Held regular office hours 3+ times a week to assist students with concepts and homework</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div id="taPic" className="picDiv">
+                                    <img src={PurdueCS} alt="Purdue CS Logo" className="d-inline-block align-center roundedLogo rightShadow" />
+                                </div>
+                            </div>
                         </div>
+                        <div className="sectionHeaderMobile">Skills</div>
+                            <div className="skillBox">
+                                <div className="skill">
+                                    <i className="devicon-java-plain-wordmark colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-csharp-plain colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-python-plain-wordmark colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-c-plain colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-cplusplus-plain colored"></i>
+                                </div>
+                            </div>
+                            <div className="skillBox">
+                                <div className="skill">
+                                    <i className="devicon-javascript-plain colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-html5-plain-wordmark colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-css3-plain-wordmark colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-react-original-wordmark colored"></i>
+                                </div>
+                                <div className="skill">
+                                    <i className="devicon-github-plain-wordmark colored"></i>
+                                </div>
+                            </div>
+                            <div className="skillBox">
+                                <div className="skill">
+                                    <Icon icon={virtualReality} valign="center" />
+                                </div>
+                                <div className="skill">
+                                    <Icon icon={augmentedReality} valign="center" />
+                                </div>
+                                <div className="skill">
+                                    <Icon icon={unityIcon} valign="center" />
+                                </div>
+                                <div className="skill">
+                                    <Icon icon={unrealIcon} valign="center" />
+                                </div>
+                                <div className="skill">
+                                    <Icon icon={firebaseIcon} valign="center" />
+                                </div>
+                            </div>
+                        <div className="sectionHeaderMobile">Download Resume</div>
+                        <Downloads />
                     </div>
-                    <div className="section">
-                        <div id="rsaDesc" className="descDiv">
-                            <ul className="list-unstyled">
-                                <li><u>Shift Manager/Senior Fraud Analyst</u></li>
-                                <li className = "descSub"><i>RSA Security • January 2018 - February 2020</i></li>
-                                <ul className="text-muted subList descSub">
-                                    <li>Managed corporate inbox and phone number as a 24/7 point of contact for 100+ financial institutions around the world</li>
-                                    <li>Created a tool that automated an entire role at our site</li>
-                                    <li>Redesigned the website that our site used for QA</li>
-                                    <li>Detected, analyzed, and shutdown fraudulent internet activity (Phishing, malware, brand abuse, trojans, etc.)</li>
-                                </ul>
-                            </ul>
-                        </div>
-                        <div id="rsaPic" className="picDiv">
-                            <img src={RSA} alt="RSA Logo" className="d-inline-block align-center roundedLogo rightShadow" />
-                        </div>
-                    </div>
-                    <div className="section">
-                        <div id="taDesc" className="descDiv">
-                            <ul className="list-unstyled">
-                                <li><u>Undergraduate Teaching Assistant</u></li>
-                                <li className = "descSub"><i>Spring 2020: Systems Programming</i></li>
-                                <ul className="text-muted subList descSub">
-                                    <li>Assisted in a lab section of 30+ students teaching topics related to shell programming and memory optimization</li>
-                                    <li>Helped shift course resources and lab materials online in response to the COVID-19 pandemic</li>
-                                </ul>
-                                <li className = "descSub"><i>Summer 2019: Object-Oriented Programming & Problem Solving in Java</i></li>
-                                <ul className="text-muted subList descSub">
-                                    <li>Taught foundational programming skills and standards to lab section of 20+ novice CS students</li>
-                                    <li>Held regular office hours 3+ times a week to assist students with concepts and homework</li>
-                                </ul>
-                            </ul>
-                        </div>
-                        <div id="taPic" className="picDiv">
-                            <img src={PurdueCS} alt="Purdue CS Logo" className="d-inline-block align-center roundedLogo rightShadow" />
-                        </div>
-                    </div>
-                </div>
-                <div className="sectionHeader">Skills</div>
-                    <div className="skillBox">
-                        <div className="skill">
-                            <i className="devicon-java-plain-wordmark colored"></i>
-                        </div>
-                        <div className="skill">
-                            <i className="devicon-csharp-plain colored"></i>
-                        </div>
-                        <div className="skill">
-                            <i className="devicon-python-plain-wordmark colored"></i>
-                        </div>
-                        <div className="skill">
-                            <i className="devicon-c-plain colored"></i>
-                        </div>
-                        <div className="skill">
-                            <i className="devicon-cplusplus-plain colored"></i>
-                        </div>
-                    </div>
-                    <div className="skillBox">
-                        <div className="skill">
-                            <i className="devicon-javascript-plain colored"></i>
-                        </div>
-                        <div className="skill">
-                            <i className="devicon-html5-plain-wordmark colored"></i>
-                        </div>
-                        <div className="skill">
-                            <i className="devicon-css3-plain-wordmark colored"></i>
-                        </div>
-                        <div className="skill">
-                            <i className="devicon-react-original-wordmark colored"></i>
-                        </div>
-                        <div className="skill">
-                            <i className="devicon-github-plain-wordmark colored"></i>
-                        </div>
-                    </div>
-                    <div className="skillBox">
-                        <div className="skill">
-                            <Icon icon={virtualReality} valign="center" />
-                        </div>
-                        <div className="skill">
-                            <Icon icon={augmentedReality} valign="center" />
-                        </div>
-                        <div className="skill">
-                            <Icon icon={unityIcon} valign="center" />
-                        </div>
-                        <div className="skill">
-                            <Icon icon={unrealIcon} valign="center" />
-                        </div>
-                        <div className="skill">
-                            <Icon icon={firebaseIcon} valign="center" />
-                        </div>
-                    </div>
-                <div className="sectionHeader">Download Resume</div>
-                <Downloads />
-            </div>
+                </MediaQuery>
+            </React.Fragment>
         );
     }
 

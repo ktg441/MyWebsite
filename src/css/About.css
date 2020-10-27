@@ -23,8 +23,16 @@
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 100px;
+    padding: 100px 5%;
     display: flex;
+}
+
+#about-me-mobile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 25%;
+    text-align: center;
 }
 
 #aboutDescription {
@@ -32,11 +40,32 @@
     text-align: center;
     font-size: 2vh;
     padding: 1% 0;
-    width: 50%;
+    width: 49%;
+}
+
+#aboutDescriptionMobile {
+    overflow: scroll;
+    text-align: center;
+    font-size: 2vh;
+    padding: 5%;
+    width: 100%;
+    height: 45%;
+    border: 2px solid gray;
+    border-radius: 5%;
 }
 
 #aboutPicture {
     width: 50%;
     padding: 1%;
     text-align: center;
+}
+
+#aboutPictureMobile {
+    width: 60%;
+    margin: 2% auto;
+    text-align: center;
+}
+
+#titleMobile {
+    font-size: 8vw;
 }

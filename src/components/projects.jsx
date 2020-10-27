@@ -7,6 +7,7 @@ import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import MediaQuery from 'react-responsive';
 
 import BoilermakeGameScreenshot1 from '../media/projects/BoilermakeGame.jpg';
 import BoilermakeGameScreenshot2 from '../media/projects/BoilermakeGame2.jpg';
@@ -104,21 +105,42 @@ class Projects extends Component {
     render() {
 
         return (
-            <div id="projects" className="siteHidden">
-                <div id="projectHeader"><u>Projects</u></div>
-                <div id="projectFilters">
-                    Filters:
-                    <Button id="WorkFilterButton" variant="primary" className="filter" onClick={() => this.changeFilters('Work')}>Work</Button>
-                    <Button id="GameFilterButton" variant="success" className="filter" onClick={() => this.changeFilters('Game')}>AR/VR/Game Dev</Button>
-                    <Button id="WebFilterButton" variant="warning" className="filter" onClick={() => this.changeFilters('Web')}>Web Dev</Button>
-                    <Button id="MiscFilterButton" variant="danger" className="filter" onClick={() => this.changeFilters('Misc')}>Misc</Button>
-                </div>
-                <div id="projectSliderContainer">
-                    <AwesomeSlider style={{ '--organic-arrow-color': '#000000' }}>
-                        { this.state.toRender }
-                    </AwesomeSlider>
-                </div>
-            </div>    
+            <React.Fragment>
+                <MediaQuery minDeviceWidth={768}>
+                    <div id="projects" className="siteHidden">
+                        <div id="projectHeader"><u>Projects</u></div>
+                        <div id="projectFilters">
+                            Filters:
+                            <Button id="WorkFilterButton" variant="primary" className="filter" onClick={() => this.changeFilters('Work')}>Work</Button>
+                            <Button id="GameFilterButton" variant="success" className="filter" onClick={() => this.changeFilters('Game')}>AR/VR/Game Dev</Button>
+                            <Button id="WebFilterButton" variant="warning" className="filter" onClick={() => this.changeFilters('Web')}>Web Dev</Button>
+                            <Button id="MiscFilterButton" style={{ display: 'none' }} variant="danger" className="filter" onClick={() => this.changeFilters('Misc')}>Misc</Button>
+                        </div>
+                        <div id="projectSliderContainer">
+                            <AwesomeSlider style={{ '--organic-arrow-color': '#000000' }}>
+                                { this.state.toRender }
+                            </AwesomeSlider>
+                        </div>
+                    </div>
+                </MediaQuery>   
+                <MediaQuery maxDeviceWidth={767}>
+                    <div id="projectsMobile" className="siteHidden">
+                        <div id="projectHeader"><u>Projects</u></div>
+                        <div id="projectFiltersMobile">
+                            Filters:
+                            <Button id="WorkFilterButton" variant="primary" className="filterMobile" onClick={() => this.changeFilters('Work')}>Work</Button>
+                            <Button id="GameFilterButton" variant="success" className="filterMobile" onClick={() => this.changeFilters('Game')}>AR/VR/Game Dev</Button>
+                            <Button id="WebFilterButton" variant="warning" className="filterMobile" onClick={() => this.changeFilters('Web')}>Web Dev</Button>
+                            <Button id="MiscFilterButton" style={{ display: 'none' }} variant="danger" className="filter" onClick={() => this.changeFilters('Misc')}>Misc</Button>
+                        </div>
+                        <div id="projectSliderContainerMobile">
+                            <AwesomeSlider style={{ '--organic-arrow-color': '#000000' }}>
+                                { this.state.toRender }
+                            </AwesomeSlider>
+                        </div>
+                    </div> 
+                </MediaQuery> 
+            </React.Fragment>
         );
     }
 

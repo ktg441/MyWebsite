@@ -7,6 +7,15 @@
     background-color: white;
 }
 
+#resumeMobile {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 25%;
+    background-color: white;
+}
+
 #resumeTemp {
     position: relative;
     width: 100%;
@@ -39,10 +48,23 @@
     font-size: 1.628vw;
 }
 
+.subListMobile {
+    font-weight: lighter;
+    font-size: 1.628vh;
+}
+
 .sectionHeader {
     text-align: center;
     font-weight: bold;
     font-size: 2.604vw;
+    border: solid 3px black;
+    margin: 10px;
+}
+
+.sectionHeaderMobile {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.604vh;
     border: solid 3px black;
     margin: 10px;
 }
@@ -68,13 +90,30 @@
     font-size: 1.953vw;
 }
 
+.descDivMobile {
+    overflow: scroll;
+    width: 55%;
+    font-weight: bold;
+    padding-left: 5%;
+    font-size: 1.953vh;
+}
+
 .descSub {
     font-size: 1.302vw;
+}
+
+.descSubMobile {
+    font-size: 1.302vh;
 }
 
 #schoolDesc {
     font-weight: bold;
     font-size: 1.953vw;
+}
+
+#schoolDescMobile {
+    font-weight: bold;
+    font-size: 2vh;
 }
 
 .skillBox {
@@ -103,6 +142,11 @@
 .whiteLink {
     color: white;
     font-size: 1.302vw;
+}
+
+.whiteLinkMobile {
+    color: white;
+    font-size: 1.5vh;
 }
 
 .whiteLink:hover {
