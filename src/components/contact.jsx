@@ -36,7 +36,7 @@ class Contact extends Component {
                                 <li className="list-inline-item"><a href="https://github.com/ktg441" target="_blank" rel="noopener noreferrer" title="" data-placement="top" data-toggle="tooltip" className="tooltips" data-original-title="Github"><FontAwesomeIcon icon={faGithub} /></a></li>
                                 <li className="list-inline-item"><a href="mailto:kiran.t.payne@gmail.com, payne77@purdue.edu" target="_blank" rel="noopener noreferrer" title="" data-placement="top" data-toggle="tooltip" className="tooltips" data-original-title="Email"><FontAwesomeIcon icon={faEnvelope} /></a></li>
                             </ul>
-                            Senior CS Student with a passion for application development.
+                            Purdue CS Graduate with a passion for application development.
                         </div>
                     </div>
                 </div>

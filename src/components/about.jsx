@@ -30,7 +30,7 @@ class About extends Component {
                         <div id="aboutDescription">
                             <h1>Welcome to my website!</h1>
                             <p>
-                                My name is Kiran Payne and I am a Senior in Computer Science at Purdue University.
+                                My name is Kiran Payne and I am a Computer Science Graduate from Purdue University.
                                 I am currently a part-time developer/researcher for the C-Design lab where I help 
                                 research Augmented Reality (AR) and Virtual Reality (VR) technology and how it can 
                                 interact with microcontrollers. My background consists mainly of IT/Security through 
@@ -72,7 +72,7 @@ class About extends Component {
                         </div>
                         <div id="aboutDescriptionMobile">
                             <p>
-                                My name is Kiran Payne and I am a Senior in Computer Science at Purdue University.
+                                My name is Kiran Payne and I am a Computer Science Graduate from Purdue University.
                                 I am currently a part-time developer/researcher for the C-Design lab where I help 
                                 research Augmented Reality (AR) and Virtual Reality (VR) technology and how it can 
                                 interact with microcontrollers. My background consists mainly of IT/Security through 

@@ -48,8 +48,8 @@ class Resume extends Component {
                                     <ul className="text-muted subList">
                                         <li>Major: Computer Science</li>
                                         <li>Minor: Entrepreneurship & Innovation</li>
-                                        <li>GPA: 3.41/4.00</li>
-                                        <li>Expected Graduation: December 2020</li>
+                                        <li>GPA: 3.44/4.00</li>
+                                        <li>Graduation Date: December 2020</li>
                                     </ul>
                                 </ul>
                             </div>
@@ -81,7 +81,7 @@ class Resume extends Component {
                                         <ul className="text-muted subList  descSub">
                                             <li>Created a foundational Threat Intelligence System that collects critical security data from various APIs</li>
                                             <li>Visualized ingested data to create consolidated Intelligence Dashboards for InfoSec team</li>
-                                            <li>Began migration of all extraneous security data into one cental location to be incorporated in above system</li>
+                                            <li>Began migration of all extraneous security data into one central location to be incorporated in above system</li>
                                             <li>Orchestrated and executed the company’s first hackathon for 20+ interns over 2 days</li>
                                         </ul>
                                     </ul>
@@ -197,8 +197,8 @@ class Resume extends Component {
                                     <ul className="text-muted subList">
                                         <li>Major: Computer Science</li>
                                         <li>Minor: Entrepreneurship & Innovation</li>
-                                        <li>GPA: 3.41/4.00</li>
-                                        <li>Expected Graduation: December 2020</li>
+                                        <li>GPA: 3.44/4.00</li>
+                                        <li>Graduation Date: December 2020</li>
                                     </ul>
                                 </ul>
                             </div>
@@ -230,7 +230,7 @@ class Resume extends Component {
                                         <ul className="text-muted subList  descSubMobile">
                                             <li>Created a foundational Threat Intelligence System that collects critical security data from various APIs</li>
                                             <li>Visualized ingested data to create consolidated Intelligence Dashboards for InfoSec team</li>
-                                            <li>Began migration of all extraneous security data into one cental location to be incorporated in above system</li>
+                                            <li>Began migration of all extraneous security data into one central location to be incorporated in above system</li>
                                             <li>Orchestrated and executed the company’s first hackathon for 20+ interns over 2 days</li>
                                         </ul>
                                     </ul>
