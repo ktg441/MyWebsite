@@ -31,15 +31,15 @@ class About extends Component {
                             <h1>Welcome to my website!</h1>
                             <p>
                                 My name is Kiran Payne and I am a Computer Science Graduate from Purdue University.
-                                I am currently a part-time developer/researcher for the C-Design lab where I help 
-                                research Augmented Reality (AR) and Virtual Reality (VR) technology and how it can 
-                                interact with microcontrollers. My background consists mainly of IT/Security through 
-                                various internship and co-op opportunities, however, my focus and future lies within 
-                                application and software development. I am actively seeking entry-level opportunities 
-                                in either application or game development.
+                                I am current a Software Engineer for Aegis Software Corporation where I help develop
+                                and maintain a set of WPF applications built using C# and powered in the backend with
+                                LINQ and SQL. I have a lot of experience working with microcontrollers/IOTs and how
+                                we as humans can better interact with the technology around us. This has involved
+                                part-time research Augmented Reality (AR) and Virtual Reality (VR) technology and 
+                                briding the gap between mixed realities, hardware, and software.
                             </p>
                             <p>
-                                Over the last three years of my undergrad career I have: explored numerous topics 
+                                Over the the three years of my undergrad career I have: explored numerous topics 
                                 in CS, learned how to properly manage collaborative team work, and gained exposure to 
                                 the corporate environment and agile development methodologies. My experience as a 
                                 student has provided me with a well-rounded taste of a future life in Computer 

@@ -12,6 +12,7 @@ import augmentedReality from '@iconify/icons-mdi/augmented-reality';
 
 import Purdue from "../media/Purdue_Boilermakers_Logo.svg";
 import PurdueCS from "../media/Purdue_CS_Logo.svg";
+import Aegis from '../media/Aegis_Logo.jpg';
 import CDesign from "../media/CDesign_Logo.svg";
 import Ecolab from "../media/EcolabLogo.svg";
 import RSA from "../media/RSALogo.svg";
@@ -56,11 +57,29 @@ class Resume extends Component {
                         </div>
                         <div className="sectionHeader">Work Experience</div>
                         <div id="workExperience">
+                        <div className="section">
+                                <div id="aegisDesc" className="descDiv">
+                                    <ul className="list-unstyled">
+                                        <li><u>Software Engineer</u></li>
+                                        <li className = "descSub"><i>Aegis Software Corporation • February 2021 - Present</i></li>
+                                        <ul className="text-muted subList descSub">
+                                            <li>Utilize .NET technologies (C#, WPF, WCF, LINQ) to maintain the FactoryLogix codebase</li>
+                                            <li>Practice Agile methodology to take on custom projects, increasing competitiveness of the software</li>
+                                            <li>Query SQL tables and update database schemas as per enhancements requested by clients</li>
+                                            <li>Fix bugs and optimize legacy code to keep up with increasing standards in software speed and fluidity</li>
+                                            <li>Communicate and collaborate with teams and stakeholders in different global regions</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div id="aegisPic" className="picDiv">
+                                    <img src={Aegis} alt="Convergence Design Lab Logo" className="d-inline-block align-center roundedLogo rightShadow" />
+                                </div>
+                            </div>
                             <div className="section">
                                 <div id="cDesc" className="descDiv">
                                     <ul className="list-unstyled">
                                         <li><u>Software Developer/Research Assistant</u></li>
-                                        <li className = "descSub"><i>C Design Lab • February 2020 - Present</i></li>
+                                        <li className = "descSub"><i>C Design Lab • February 2020 - April 2021</i></li>
                                         <ul className="text-muted subList descSub">
                                             <li>Lead programmer for 6 person research team</li>
                                             <li>Created and modernized aspects of an AR-IoT System used for research projects</li>
